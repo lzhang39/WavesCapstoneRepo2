@@ -5,6 +5,6 @@ target 'NoteAppCoreData' do
   use_frameworks!
 
   # Pods for NoteAppCoreData
-pod 'HGPlaceholders'
+
 
 end
