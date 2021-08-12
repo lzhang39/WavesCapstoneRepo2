@@ -6,7 +6,8 @@ import CoreData
 class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // Make global variable
-    var waves:String = "0 ft"
+    var waves:String = ""
+    //var waves:String = ""
     
 
 //Title text Field
@@ -80,18 +81,25 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                 newNote.deletedDate = Date()
                 if (newNote.title != nil && newNote.desc != nil) {
                     
-                
+                if (waves == ""){
+                    let alert = UIAlertController(title: "Did you enter all Information?", message: "Please make sure Title and Description are both occupied", preferredStyle: .alert)
+
+                    alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+                    self.present(alert, animated: true)
+                }else {
                 do
                 {//saving to noteList array
-                    try context.save()
-                    noteList.append(newNote)
-                    // ***
+//                    try context.save()
+//                    noteList.append(newNote)
+//                    // ***
 //                    navigationController?.popViewController(animated: true)
-                    if waves == "0 ft"
-                    {
+                    if waves == "0 ft"{
+                    
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ZeroFTVC") as? ZeroFTVC
                         self.navigationController?.pushViewController(vc!, animated: true)
-                    }else if waves == "15 ft"{
+                    } else if waves == "15 ft"{
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OneFTVC") as? OneFTVC
                         self.navigationController?.pushViewController(vc!, animated: true)
                     }else if waves == "30 ft"{
@@ -101,14 +109,16 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ThreeFTVC") as? ThreeFTVC
                         self.navigationController?.pushViewController(vc!, animated: true)
                     }
-                    
+                    try context.save()
+                    noteList.append(newNote)
+                
                 }
                 catch
                 {
                     print("context save error")
                 }
                     
-                }
+                } }
             }
             
             
