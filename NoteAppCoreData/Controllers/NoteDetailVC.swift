@@ -1,14 +1,17 @@
 import UIKit
 import CoreData
+
+
 //entering note info
 class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // Make global variable
     var waves:String = "0 ft"
+    
 
 //Title text Field
 	@IBOutlet weak var titleTF: UITextField!
-    //Description Text Field
+    //Description text Field
 	@IBOutlet weak var descTV: UITextView!
 	
 	var selectedNote: Note? = nil //class?
@@ -25,7 +28,6 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         self.picker.delegate = self
         self.picker.dataSource = self
     
-        
 		if(selectedNote != nil)
 		{//displays title and description
 			titleTF.text = selectedNote?.title
@@ -55,6 +57,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     
+    
     @IBAction func saveAction(_ sender: Any)
         {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -82,6 +85,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                 {//saving to noteList array
                     try context.save()
                     noteList.append(newNote)
+                    // ***
 //                    navigationController?.popViewController(animated: true)
                     if waves == "0 ft"
                     {
@@ -98,7 +102,6 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                         self.navigationController?.pushViewController(vc!, animated: true)
                     }
                     
-
                 }
                 catch
                 {
@@ -107,6 +110,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                     
                 }
             }
+            
             
             //if selected note is not empty
             else //edit
@@ -132,6 +136,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                 }
             }
         }
+    
     
         //Deleting Note
         @IBAction func DeleteNote(_ sender: Any)

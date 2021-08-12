@@ -1,6 +1,7 @@
 import UIKit
 import CoreData
 
+
 //seeing list of notes
 var noteList = [Note]()
 
@@ -23,8 +24,10 @@ class NoteTableView: UITableViewController
 	
 	override func viewDidLoad()
 	{//load firstload that has array of notes
+        
         //Just empty array when back to again array should be empty.
         noteList = []
+        // BUG-1
 		if(firstLoad)
 		{
 			firstLoad = false //? set it false
@@ -93,6 +96,7 @@ class NoteTableView: UITableViewController
 //	{//arrow going to NoteDetail
 //		self.performSegue(withIdentifier: "SummarySegue", sender: self)
 //	}
+    
 //	//prepare segue
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?)
 	{
@@ -110,6 +114,5 @@ class NoteTableView: UITableViewController
 			tableView.deselectRow(at: indexPath, animated: true)
 		}
 	}
-	
 	
 }

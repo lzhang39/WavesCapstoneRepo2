@@ -1,6 +1,3 @@
-// LIN WAS HERE
-
-
 import CoreData
 
 @objc(Note)

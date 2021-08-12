@@ -12,13 +12,13 @@ import CoreData
 
 
 
-
 class SingleViewVC: UIViewController {
     
     @IBOutlet weak var Description1: UILabel!
     @IBOutlet weak var Title1: UILabel!
     @IBOutlet weak var Date1: UILabel!
     @IBOutlet weak var Wavelength: UILabel!
+    
     var selectedJournal : Note!
     
     override func viewDidLoad() {
