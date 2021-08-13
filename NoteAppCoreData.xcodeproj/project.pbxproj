@@ -32,6 +32,10 @@
 		607F9F6426BF57FF00EFB172 /* Wave2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F9F6326BF57FF00EFB172 /* Wave2SwiftUIView.swift */; };
 		607F9F6626BF5CEF00EFB172 /* WaveThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F9F6526BF5CEF00EFB172 /* WaveThreeViewController.swift */; };
 		607F9F6926BF5D1900EFB172 /* Wave3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F9F6826BF5D1900EFB172 /* Wave3SwiftUIView.swift */; };
+		60F1176926C6D5600073C7CB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1176826C6D5600073C7CB /* OnboardingViewController.swift */; };
+		60F1176C26C6D8440073C7CB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1176B26C6D8440073C7CB /* UIView+Extension.swift */; };
+		60F1176F26C6D8F10073C7CB /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1176E26C6D8F10073C7CB /* OnboardingSlide.swift */; };
+		60F1177126C6DB600073C7CB /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1177026C6DB600073C7CB /* OnboardingCollectionViewCell.swift */; };
 		8846F2ED26C556CE00473DDC /* ZeroFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846F2EC26C556CE00473DDC /* ZeroFTVC.swift */; };
 		8846F2F226C5583900473DDC /* TwoFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846F2EF26C5583800473DDC /* TwoFTVC.swift */; };
 		8846F2F326C5583900473DDC /* ThreeFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846F2F026C5583900473DDC /* ThreeFTVC.swift */; };
@@ -65,6 +69,10 @@
 		607F9F6326BF57FF00EFB172 /* Wave2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave2SwiftUIView.swift; sourceTree = "<group>"; };
 		607F9F6526BF5CEF00EFB172 /* WaveThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveThreeViewController.swift; sourceTree = "<group>"; };
 		607F9F6826BF5D1900EFB172 /* Wave3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave3SwiftUIView.swift; sourceTree = "<group>"; };
+		60F1176826C6D5600073C7CB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		60F1176B26C6D8440073C7CB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		60F1176E26C6D8F10073C7CB /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		60F1177026C6DB600073C7CB /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F66A98DE5B405E9C8FB5BCF /* Pods-NoteAppCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteAppCoreData.debug.xcconfig"; path = "Target Support Files/Pods-NoteAppCoreData/Pods-NoteAppCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		8846F2EC26C556CE00473DDC /* ZeroFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroFTVC.swift; sourceTree = "<group>"; };
 		8846F2EF26C5583800473DDC /* TwoFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFTVC.swift; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 		2E37154525C0FB980037351E /* NoteAppCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				60F1176A26C6D8260073C7CB /* Extentions */,
 				607369C126C178BC00E14ADF /* wave-loader.json */,
 				2E37154625C0FB980037351E /* AppDelegate.swift */,
 				2E37154825C0FB980037351E /* SceneDelegate.swift */,
@@ -153,6 +162,8 @@
 		607F9F3626BF092D00EFB172 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				60F1176D26C6D8DE0073C7CB /* Models */,
+				60F1176726C6D5290073C7CB /* Onboarding */,
 				2E37155225C0FB9B0037351E /* Assets.xcassets */,
 				2E37154C25C0FB980037351E /* Main.storyboard */,
 				2E37155425C0FB9B0037351E /* LaunchScreen.storyboard */,
@@ -197,6 +208,31 @@
 				607F9F6826BF5D1900EFB172 /* Wave3SwiftUIView.swift */,
 			);
 			path = WaveThree;
+			sourceTree = "<group>";
+		};
+		60F1176726C6D5290073C7CB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				60F1176826C6D5600073C7CB /* OnboardingViewController.swift */,
+				60F1177026C6DB600073C7CB /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		60F1176A26C6D8260073C7CB /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				60F1176B26C6D8440073C7CB /* UIView+Extension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		60F1176D26C6D8DE0073C7CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60F1176E26C6D8F10073C7CB /* OnboardingSlide.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6AF259FB9629211CACAADDCD /* Pods */ = {
@@ -339,6 +375,7 @@
 				607F9F6626BF5CEF00EFB172 /* WaveThreeViewController.swift in Sources */,
 				3EF77F8426C35094008884B9 /* SingleViewVC.swift in Sources */,
 				607F9F4026BF491900EFB172 /* WaveOneViewController.swift in Sources */,
+				60F1176F26C6D8F10073C7CB /* OnboardingSlide.swift in Sources */,
 				8846F2F226C5583900473DDC /* TwoFTVC.swift in Sources */,
 				607F9F3A26BF31CD00EFB172 /* WaveExplanationViewController.swift in Sources */,
 				607F9F3C26BF328B00EFB172 /* ReturningMainViewController.swift in Sources */,
@@ -350,10 +387,13 @@
 				2E37155F25C101E20037351E /* NoteCell.swift in Sources */,
 				8846F2ED26C556CE00473DDC /* ZeroFTVC.swift in Sources */,
 				607F9F6126BF57CE00EFB172 /* WaveTwoViewController.swift in Sources */,
+				60F1176926C6D5600073C7CB /* OnboardingViewController.swift in Sources */,
 				2E37155125C0FB980037351E /* NoteAppCoreData.xcdatamodeld in Sources */,
 				2E37154925C0FB980037351E /* SceneDelegate.swift in Sources */,
 				607F9F6426BF57FF00EFB172 /* Wave2SwiftUIView.swift in Sources */,
+				60F1176C26C6D8440073C7CB /* UIView+Extension.swift in Sources */,
 				607F9F3826BF288400EFB172 /* NotificationsViewController.swift in Sources */,
+				60F1177126C6DB600073C7CB /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
