@@ -6,7 +6,7 @@ import CoreData
 class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // Make global variable
-    var waves:String = "Please Select A Wave"
+    var waves:String = "select a wave"
     
     
     //Title text Field
@@ -19,7 +19,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     @IBOutlet weak var picker: UIPickerView!
     
-    var pickerData = [["Please Select A Wave" ,"0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
+    var pickerData = [["select a wave" ,"0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -59,7 +59,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     
     @IBAction func saveAction(_ sender: Any)
-    { if (waves == "Please Select A Wave"){
+    { if (waves == "select a wave"){
         let alert = UIAlertController(title: "Did you enter Wave Info?", message: "Please make sure you selected your Wavelength", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -87,14 +87,6 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         newNote.deletedDate = Date()
         //                if (newNote.title != nil && newNote.desc != nil) {
         
-        //            if (waves == "Please Select A Wave"){
-        //                let alert = UIAlertController(title: "Did you enter Wave Info?", message: "Please make sure you selected your Wavelength", preferredStyle: .alert)
-        //
-        //                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        //                //alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-        //
-        //                self.present(alert, animated: true)
-        //            }else {
         do
                 {//saving to noteList array
                     //                    try context.save()
