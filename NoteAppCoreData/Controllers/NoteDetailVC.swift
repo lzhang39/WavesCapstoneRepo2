@@ -7,7 +7,6 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     // Make global variable
     var waves:String = ""
-    //var waves:String = ""
     
 
 //Title text Field
@@ -20,7 +19,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     @IBOutlet weak var picker: UIPickerView!
     
-    var pickerData = [["0 ft", "15 ft", "30 ft", "50 ft"]]
+    var pickerData = [["0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
     
 	override func viewDidLoad(){
 		super.viewDidLoad()
@@ -82,10 +81,10 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                 if (newNote.title != nil && newNote.desc != nil) {
                     
                 if (waves == ""){
-                    let alert = UIAlertController(title: "Did you enter all Information?", message: "Please make sure Title and Description are both occupied", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Did you enter Wave Info?", message: "Please make sure you selected your Wavelength", preferredStyle: .alert)
 
-                    alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-                    alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    //alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
 
                     self.present(alert, animated: true)
                 }else {
@@ -99,11 +98,14 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                     
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ZeroFTVC") as? ZeroFTVC
                         self.navigationController?.pushViewController(vc!, animated: true)
-                    } else if waves == "15 ft"{
+                    } else if waves == "10 ft"{
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "OneFTVC") as? OneFTVC
                         self.navigationController?.pushViewController(vc!, animated: true)
-                    }else if waves == "30 ft"{
+                    }else if waves == "25 ft"{
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TwoFTVC") as? TwoFTVC
+                        self.navigationController?.pushViewController(vc!, animated: true)
+                    }else if waves == "40 ft"{
+                        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "FourFTVC") as? FourFTVC
                         self.navigationController?.pushViewController(vc!, animated: true)
                     }else if waves == "50 ft"{
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ThreeFTVC") as? ThreeFTVC
