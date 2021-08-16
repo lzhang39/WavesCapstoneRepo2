@@ -808,7 +808,7 @@
                                                     <rect key="frame" x="8" y="8" width="398" height="321"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="ecF-Ok-NqR">
-                                                    <rect key="frame" x="26" y="355" width="355" height="108"/>
+                                                    <rect key="frame" x="30" y="390" width="355" height="108"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZW-Cz-ivS">
                                                             <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
@@ -836,12 +836,12 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ecF-Ok-NqR" firstAttribute="leading" secondItem="AFW-jY-T0v" secondAttribute="leading" constant="26" id="6Ig-Io-8VN"/>
+                                                <constraint firstItem="ecF-Ok-NqR" firstAttribute="leading" secondItem="AFW-jY-T0v" secondAttribute="leading" constant="30" id="6Ig-Io-8VN"/>
                                                 <constraint firstItem="lnd-J5-xDs" firstAttribute="top" secondItem="AFW-jY-T0v" secondAttribute="topMargin" id="QdW-KX-kER"/>
                                                 <constraint firstItem="lnd-J5-xDs" firstAttribute="leading" secondItem="AFW-jY-T0v" secondAttribute="leadingMargin" id="SSE-Gr-Vjw"/>
-                                                <constraint firstItem="ecF-Ok-NqR" firstAttribute="top" secondItem="lnd-J5-xDs" secondAttribute="bottom" constant="26" id="Vn9-Dn-O4x"/>
+                                                <constraint firstItem="ecF-Ok-NqR" firstAttribute="top" secondItem="lnd-J5-xDs" secondAttribute="bottom" constant="61" id="Vn9-Dn-O4x"/>
                                                 <constraint firstItem="lnd-J5-xDs" firstAttribute="trailing" secondItem="AFW-jY-T0v" secondAttribute="trailingMargin" id="mfb-K2-YWs"/>
-                                                <constraint firstAttribute="bottom" secondItem="ecF-Ok-NqR" secondAttribute="bottom" constant="102" id="nzZ-MY-k3z"/>
+                                                <constraint firstAttribute="bottom" secondItem="ecF-Ok-NqR" secondAttribute="bottom" constant="67" id="nzZ-MY-k3z"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="565"/>
