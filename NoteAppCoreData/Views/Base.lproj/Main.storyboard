@@ -135,7 +135,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-lI-euC">
                                 <rect key="frame" x="10" y="112" width="394" height="714"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <mutableString key="text">Alright, here goes. I'm old. What that means is that I've survived (so far) and a lot of people I've known and loved did not. I've lost friends, best friends, acquaintances, co-workers, grandparents, mom, relatives, teachers, mentors, students, neighbors, and a host of other folks. I have no children, and I can't imagine the pain it must be to lose a child. But here's my two cents. I wish I could say you get used to people dying. I never did. I don't want to. It tears a hole through me whenever somebody I love dies, no matter the circumstances. But I don't want it to "not matter". I don't want it to be something that just passes. My scars are a testament to the love and the relationship that I had for and with that person. And if the scar is deep, so was the love. So be it. Scars are a testament to life. Scars are a testament that I can love deeply and live deeply and be cut, or even gouged, and that I can heal and continue to live and continue to love. And the scar tissue is stronger than the original flesh ever was. Scars are a testament to life. Scars are only ugly to people who can't see. As for grief, you'll find it comes in waves. When the ship is first wrecked, you're drowning, with wreckage all around you. Everything floating around you reminds you of the beauty and the magnificence of the ship that was, and is no more. And all you can do is float. You find some piece of the wreckage and you hang on for a while. Maybe it's some physical thing. Maybe it's a happy memory or a photograph. Maybe it's a person who is also floating. For a while, all you can do is float. Stay alive. In the beginning, the waves are 100 feet tall and crash over you without mercy. They come 10 seconds apart and don't even give you time to catch your breath. All you can do is hang on and float. After a while, maybe weeks, maybe months, you'll find the waves are still 100 feet tall, but they come further apart. When they come, they still crash all over you and wipe you out. But in between, you can breathe, you can function. You never know what's going to trigger the grief. It might be a song, a picture, a street intersection, the smell of a cup of coffee. It can be just about anything...and the wave comes crashing. But in between waves, there is life. Somewhere down the line, and it's different for everybody, you find that the waves are only 80 feet tall. Or 50 feet tall. And while they still come, they come further apart. You can see them coming. An anniversary, a birthday, or Christmas, or landing at O'Hare. You can see it coming, for the most part, and prepare yourself. And when it washes over you, you know that somehow you will, again, come out the other side. Soaking wet, sputtering, still hanging on to some tiny piece of the wreckage, but you'll come out. Take it from an old guy. The waves never stop coming, and somehow you don't really want them to. But you learn that you'll survive them. And other waves will come. And you'll survive them too. If you're lucky, you'll have lots of scars from lots of loves. And lots of shipwrecks.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -143,13 +143,13 @@
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EPI-zz-xkt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="TdW-Ar-xoj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceT-nI-zHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="-52"/>
+            <point key="canvasLocation" x="1780" y="-94"/>
         </scene>
         <!--Single ViewVC-->
         <scene sceneID="jhR-Xl-0OX">
@@ -208,7 +208,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LiF-7g-JFf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="zQW-WV-AO9" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" id="00X-9h-N2r"/>
                             <constraint firstItem="Pzb-0i-Oo8" firstAttribute="top" secondItem="lTJ-Td-nRB" secondAttribute="bottom" constant="8" id="Bae-EQ-440"/>
@@ -232,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0s-hz-80c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866.6666666666667" y="-703.125"/>
+            <point key="canvasLocation" x="1867" y="-984"/>
         </scene>
         <!--ZeroFTVC-->
         <scene sceneID="XFN-QX-JhX">
@@ -371,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLw-S5-1Sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="595"/>
+            <point key="canvasLocation" x="790" y="811"/>
         </scene>
         <!--Link View Controller-->
         <scene sceneID="l0Q-gI-bfk">
@@ -386,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OkS-gv-c7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="637"/>
+            <point key="canvasLocation" x="1780" y="595"/>
         </scene>
         <!--Note Table View-->
         <scene sceneID="Mj3-aQ-UEu">
@@ -522,14 +522,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDz-Ti-T5f">
-                                <rect key="frame" x="264" y="140" width="98" height="30"/>
-                                <color key="backgroundColor" red="0.75554071680000001" green="0.99487285670000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Record Waves"/>
-                                <connections>
-                                    <segue destination="wHk-WK-yLw" kind="show" id="laQ-jt-vY4"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.66981226250000003" green="0.88198825589999996" blue="0.88653364089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -539,7 +531,6 @@
                             <constraint firstItem="KKu-MH-QUm" firstAttribute="centerX" secondItem="z0s-qc-diC" secondAttribute="centerX" id="GzN-YI-AB7"/>
                             <constraint firstItem="PvM-t2-8mg" firstAttribute="centerX" secondItem="cyW-2z-u83" secondAttribute="centerX" constant="-2" id="HOe-W5-Aox"/>
                             <constraint firstItem="cyW-2z-u83" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="JXk-zf-KcO"/>
-                            <constraint firstItem="RDz-Ti-T5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="264" id="KBy-cf-3Bq"/>
                             <constraint firstItem="PvM-t2-8mg" firstAttribute="top" secondItem="cyW-2z-u83" secondAttribute="bottom" constant="17" id="MNY-uE-EVQ"/>
                             <constraint firstItem="KKu-MH-QUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ngy-lY-E6e"/>
                             <constraint firstItem="KKu-MH-QUm" firstAttribute="top" secondItem="IWX-kp-Zab" secondAttribute="bottom" constant="8" id="XsC-n6-XPF"/>
@@ -550,7 +541,6 @@
                             <constraint firstItem="z0s-qc-diC" firstAttribute="top" secondItem="KKu-MH-QUm" secondAttribute="bottom" constant="67" id="hxo-AZ-uSH"/>
                             <constraint firstItem="L8V-zG-c2k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="krF-yk-Tcn"/>
                             <constraint firstItem="IWX-kp-Zab" firstAttribute="centerX" secondItem="KKu-MH-QUm" secondAttribute="centerX" id="lsD-oD-c7m"/>
-                            <constraint firstItem="RDz-Ti-T5f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mmd-rM-PjD"/>
                             <constraint firstItem="Lvu-R3-vUO" firstAttribute="centerX" secondItem="PvM-t2-8mg" secondAttribute="centerX" constant="2" id="pCR-I1-mvF"/>
                             <constraint firstItem="IWX-kp-Zab" firstAttribute="top" secondItem="Lvu-R3-vUO" secondAttribute="bottom" constant="69" id="rT5-RY-zbd"/>
                             <constraint firstItem="z0s-qc-diC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="t8Z-kl-AUE"/>
@@ -588,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867" y="-1439"/>
+            <point key="canvasLocation" x="1867" y="-1753"/>
         </scene>
         <!--Wave Options View Controller-->
         <scene sceneID="q0U-Nj-Lxg">
@@ -599,31 +589,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaveLength?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nZ-Kz-Y6h">
-                                <rect key="frame" x="146" y="80" width="103" height="21"/>
+                                <rect key="frame" x="146" y="-16" width="103" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Small Wave - I feel Ok" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkO-2K-gGl">
-                                <rect key="frame" x="124" y="147" width="166" height="21"/>
+                                <rect key="frame" x="124" y="51" width="166" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium Wave - It was a long day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAR-f1-rFL">
-                                <rect key="frame" x="82" y="363" width="250" height="21"/>
+                                <rect key="frame" x="82" y="267" width="250" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large Wave - Drowning in Feelings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4a-SP-3HQ">
-                                <rect key="frame" x="82" y="593" width="263.5" height="21"/>
+                                <rect key="frame" x="82" y="497" width="263.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUv-ia-hcW">
-                                <rect key="frame" x="124" y="213" width="166" height="98"/>
+                                <rect key="frame" x="124" y="117" width="166" height="98"/>
                                 <color key="backgroundColor" red="0.96848052740000001" green="0.91723498660000002" blue="0.84269406000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="Ths-xk-NH7"/>
@@ -634,7 +624,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRp-Zy-4su">
-                                <rect key="frame" x="124" y="432" width="166" height="98"/>
+                                <rect key="frame" x="124" y="336" width="166" height="98"/>
                                 <color key="backgroundColor" red="0.96848052740000001" green="0.91723498660000002" blue="0.84269406000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="lCK-qV-JlV"/>
@@ -645,7 +635,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTd-Ov-lAq">
-                                <rect key="frame" x="124" y="641" width="166" height="104"/>
+                                <rect key="frame" x="124" y="545" width="166" height="200"/>
                                 <color key="backgroundColor" red="0.96848052740000001" green="0.91723498660000002" blue="0.84269406000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Press to Breathe"/>
                                 <connections>
@@ -680,18 +670,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVi-aC-SFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2862" y="-984"/>
+            <point key="canvasLocation" x="5803" y="-1389"/>
         </scene>
         <!--Wave Three View Controller-->
         <scene sceneID="c1s-7m-DED">
             <objects>
                 <viewController id="ls3-sQ-26z" customClass="WaveThreeViewController" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vbq-XX-EB5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beauty also blooms underwater" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUc-dV-MTO">
-                                <rect key="frame" x="26" y="167" width="362" height="48"/>
+                                <rect key="frame" x="26" y="27" width="362" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ahi-af-NP9"/>
                                 </constraints>
@@ -700,7 +690,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rosedesign" translatesAutoresizingMaskIntoConstraints="NO" id="hMt-rZ-WWl">
-                                <rect key="frame" x="87" y="223" width="240" height="128"/>
+                                <rect key="frame" x="87" y="83" width="240" height="214"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="beC-xq-ezo"/>
@@ -726,11 +716,11 @@
             <objects>
                 <viewController id="Xdl-qX-QeH" customClass="WaveTwoViewController" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7j-Yh-xSy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today You stayed afloat and continued to bloom" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bck-AB-ar0">
-                                <rect key="frame" x="25" y="185" width="362" height="34"/>
+                                <rect key="frame" x="25" y="45" width="362" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="wsc-iz-mm0"/>
                                 </constraints>
@@ -739,7 +729,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mug" translatesAutoresizingMaskIntoConstraints="NO" id="UC6-dz-ToQ">
-                                <rect key="frame" x="87" y="227" width="240" height="128"/>
+                                <rect key="frame" x="87" y="173" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Lhg-8t-ddF"/>
                                 </constraints>
@@ -767,11 +757,11 @@
             <objects>
                 <viewController id="HVe-h1-np5" customClass="WaveOneViewController" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ee-97-tzd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your blooming petals shined brightly today" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fei-mf-eN3">
-                                <rect key="frame" x="26" y="191" width="362" height="34"/>
+                                <rect key="frame" x="26" y="51" width="362" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="PCI-0r-bti"/>
                                 </constraints>
@@ -780,7 +770,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="petals" translatesAutoresizingMaskIntoConstraints="NO" id="xYI-LQ-Sr6">
-                                <rect key="frame" x="87" y="258" width="240" height="128"/>
+                                <rect key="frame" x="87" y="118" width="240" height="214"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CRS-bB-6st"/>
