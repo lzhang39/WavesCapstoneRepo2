@@ -23,11 +23,9 @@ class ZeroFTVC: UIViewController {
         super.viewDidLoad()
         // Added navigation button
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(backToInitial(sender:)))
-//        lottieAnimation()
-    }
-    
-    
-    @IBAction func buttonTapped(_ sender: Any) {
+        lottieAnimation()
+        
+        // ADD THIS SOUND FUNCTIONALITY TO ALL THE OTHER WAVE PATHS !
         let pathToSound = Bundle.main.path(forResource: "seagull-beach-sound-effect", ofType: "mp3")!
         let url = URL(fileURLWithPath: pathToSound)
 
@@ -35,8 +33,21 @@ class ZeroFTVC: UIViewController {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer?.play()
         } catch {
-        // error handling
     }
+        //
+    
+    
+        
+//    @IBAction func buttonTapped(_ sender: Any) {
+//        let pathToSound = Bundle.main.path(forResource: "seagull-beach-sound-effect", ofType: "mp3")!
+//        let url = URL(fileURLWithPath: pathToSound)
+//
+//        do{
+//            audioPlayer = try AVAudioPlayer(contentsOf: url)
+//            audioPlayer?.play()
+//        } catch {
+//        // error handling
+//    }
 }
 
     
@@ -65,32 +76,3 @@ class ZeroFTVC: UIViewController {
     }
 
 }
-
-
-//@IBAction func itemTapped(_ sender: UIButton){
-////        let selectedItem = sender.tag
-//    let pathToSound = Bundle.main.path(forResource: "seagull-beach-sound-effect", ofType: "mp3")!
-//    let url = URL(fileURLWithPath: pathToSound)
-////        if let player = audioPlayer, player.isPlaying{
-////            // stop playback
-////            button.setTitle("Stop", for: .normal)
-////            player.stop()
-////        }
-////        else{
-////            // set up player, and play
-////            button.setTitle("Play", for: .normal)
-////
-////            do{
-////                audioPlayer = try AVAudioPlayer(contentsOf: url)
-////                audioPlayer?.play()
-////            }
-////            catch{
-////        }
-//    do{
-//        audioPlayer = try AVAudioPlayer(contentsOf: url)
-//        audioPlayer?.play()
-//    } catch {
-////         error handling
-//}
-//}
-

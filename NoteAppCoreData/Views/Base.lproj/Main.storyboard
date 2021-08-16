@@ -210,9 +210,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymg-WZ-Pe6">
-                                <rect key="frame" x="166" y="427" width="82" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymg-WZ-Pe6">
+                                <rect key="frame" x="312" y="44" width="82" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Sounds"/>
                                 <connections>
@@ -222,6 +221,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cdX-I1-uIK"/>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.8901960784313725" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ymg-WZ-Pe6" firstAttribute="trailing" secondItem="8ID-Tb-p4h" secondAttribute="trailingMargin" id="9ae-Cx-oZh"/>
+                            <constraint firstItem="ymg-WZ-Pe6" firstAttribute="top" secondItem="cdX-I1-uIK" secondAttribute="top" id="oEy-lK-IBa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uay-Sb-xzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
