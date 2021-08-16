@@ -30,7 +30,7 @@
                                 <rect key="frame" x="71" y="492" width="288" height="55"/>
                                 <color key="backgroundColor" red="0.66981226250000003" green="0.88198825589999996" blue="0.88653364089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Wave Details"/>
+                                <state key="normal" title="Resources"/>
                                 <connections>
                                     <segue destination="lRl-VO-01U" kind="show" identifier="WaveDetails" id="Hbh-nh-W0K"/>
                                 </connections>
@@ -87,9 +87,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Wave Explanations" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LUn-Az-B4j">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://www.thedinnerparty.org/" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LUn-Az-B4j">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
