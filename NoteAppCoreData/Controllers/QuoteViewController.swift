@@ -1,25 +1,16 @@
 //
-//  WaveExplanationViewController.swift
+//  QuoteViewController.swift
 //  NoteAppCoreData
 //
-//  Created by Ada on 8/7/21.
+//  Created by Ada on 8/16/21.
 //
 
 import UIKit
 
-class WaveExplanationViewController: UIViewController {
-    
-    @IBAction func LinkButton(_ sender: Any) {
-        if let url = URL(string: "https://www.thedinnerparty.org/") {
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url, options: [:])
-         }
-        }
-    }
-    
+class QuoteViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
 
         // Do any additional setup after loading the view.
     }
