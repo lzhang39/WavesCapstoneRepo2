@@ -26,6 +26,8 @@
 		3E01B5CF26CA0EC200D8D79F /* lf30_editor_oosc6awj.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E01B5CE26CA0EC100D8D79F /* lf30_editor_oosc6awj.json */; };
 		3E01B5D226CA1AFD00D8D79F /* seagull-beach-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3E01B5D026CA1AFD00D8D79F /* seagull-beach-sound-effect.mp3 */; };
 		3E01B5D326CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3E01B5D126CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 */; };
+		3E01B5D726CA2D5800D8D79F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01B5D626CA2D5800D8D79F /* UIViewController+Extension.swift */; };
+		3E01B5D926CA2EBD00D8D79F /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01B5D826CA2EBD00D8D79F /* UserDefaults+Extension.swift */; };
 		3EF77F8426C35094008884B9 /* SingleViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF77F8326C35094008884B9 /* SingleViewVC.swift */; };
 		4B23E35F519145D051F5C22C /* Pods_NoteAppCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F6A6FE398A3832A37C0353 /* Pods_NoteAppCoreData.framework */; };
 		6015370E26C5E4E20052CD40 /* FourFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6015370D26C5E4E20052CD40 /* FourFTVC.swift */; };
@@ -74,6 +76,8 @@
 		3E01B5CE26CA0EC100D8D79F /* lf30_editor_oosc6awj.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_oosc6awj.json; sourceTree = "<group>"; };
 		3E01B5D026CA1AFD00D8D79F /* seagull-beach-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "seagull-beach-sound-effect.mp3"; sourceTree = "<group>"; };
 		3E01B5D126CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ocean-waves-crashing-sound.mp3"; sourceTree = "<group>"; };
+		3E01B5D626CA2D5800D8D79F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		3E01B5D826CA2EBD00D8D79F /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		3EF77F8326C35094008884B9 /* SingleViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewVC.swift; sourceTree = "<group>"; };
 		6015370D26C5E4E20052CD40 /* FourFTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourFTVC.swift; sourceTree = "<group>"; };
 		607369C126C178BC00E14ADF /* wave-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wave-loader.json"; sourceTree = "<group>"; };
@@ -136,7 +140,7 @@
 		2E37154525C0FB980037351E /* NoteAppCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				60F1176A26C6D8260073C7CB /* Extentions */,
+				60F1176A26C6D8260073C7CB /* Extensions */,
 				607369C126C178BC00E14ADF /* wave-loader.json */,
 				2E37154625C0FB980037351E /* AppDelegate.swift */,
 				2E37154825C0FB980037351E /* SceneDelegate.swift */,
@@ -254,12 +258,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		60F1176A26C6D8260073C7CB /* Extentions */ = {
+		60F1176A26C6D8260073C7CB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				60F1176B26C6D8440073C7CB /* UIView+Extension.swift */,
+				3E01B5D626CA2D5800D8D79F /* UIViewController+Extension.swift */,
+				3E01B5D826CA2EBD00D8D79F /* UserDefaults+Extension.swift */,
 			);
-			path = Extentions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		60F1176D26C6D8DE0073C7CB /* Models */ = {
@@ -415,6 +421,7 @@
 				8846F2F426C5583900473DDC /* OneFTVC.swift in Sources */,
 				6015370E26C5E4E20052CD40 /* FourFTVC.swift in Sources */,
 				8846F2F326C5583900473DDC /* ThreeFTVC.swift in Sources */,
+				3E01B5D726CA2D5800D8D79F /* UIViewController+Extension.swift in Sources */,
 				2E37154B25C0FB980037351E /* NoteDetailVC.swift in Sources */,
 				607F9F6626BF5CEF00EFB172 /* WaveThreeViewController.swift in Sources */,
 				3EF77F8426C35094008884B9 /* SingleViewVC.swift in Sources */,
@@ -438,6 +445,7 @@
 				60F1176C26C6D8440073C7CB /* UIView+Extension.swift in Sources */,
 				607F9F3826BF288400EFB172 /* NotificationsViewController.swift in Sources */,
 				60F1177126C6DB600073C7CB /* OnboardingCollectionViewCell.swift in Sources */,
+				3E01B5D926CA2EBD00D8D79F /* UserDefaults+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
