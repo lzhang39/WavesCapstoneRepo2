@@ -6,35 +6,35 @@ import CoreData
 class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // Make global variable
-    var waves:String = ""
+    var waves:String = "select a wave"
     
-
-//Title text Field
-	@IBOutlet weak var titleTF: UITextField!
+    
+    //Title text Field
+    @IBOutlet weak var titleTF: UITextField!
     //Description text Field
-	@IBOutlet weak var descTV: UITextView!
-	
-	var selectedNote: Note? = nil //class?
+    @IBOutlet weak var descTV: UITextView!
+    
+    var selectedNote: Note? = nil //class?
     
     
     @IBOutlet weak var picker: UIPickerView!
     
-    var pickerData = [["0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
+    var pickerData = [["select a wave" ,"0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
     
-	override func viewDidLoad(){
-		super.viewDidLoad()
+    override func viewDidLoad(){
+        super.viewDidLoad()
         
         // Connect data:
         self.picker.delegate = self
         self.picker.dataSource = self
+        
+        if(selectedNote != nil)
+        {//displays title and description
+            titleTF.text = selectedNote?.title
+            descTV.text = selectedNote?.desc
+        }
+    }
     
-		if(selectedNote != nil)
-		{//displays title and description
-			titleTF.text = selectedNote?.title
-			descTV.text = selectedNote?.desc
-		}
-	}
-
     
     // Number of columns of data
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -59,43 +59,42 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     
     @IBAction func saveAction(_ sender: Any)
-        {
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-            
-            
-            //if selected note is empty; create a new note; newNote doesnt need segue?
-            if(selectedNote == nil)
-            {//calling Note class in data model
-                let entity = NSEntityDescription.entity(forEntityName: "Note", in: context)
-                
-                //creating new note ?
-                let newNote = Note(entity: entity!, insertInto: context)
-                newNote.id = noteList.count as NSNumber
-                newNote.title = titleTF.text
-                newNote.desc = descTV.text
-                // self.waves also works here ???
-                newNote.wavelength = waves
-                //
-                newNote.deletedDate = Date()
-                if (newNote.title != nil && newNote.desc != nil) {
-                    
-                if (waves == ""){
-                    let alert = UIAlertController(title: "Did you enter Wave Info?", message: "Please make sure you selected your Wavelength", preferredStyle: .alert)
-
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    //alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-
-                    self.present(alert, animated: true)
-                }else {
-                do
+    { if (waves == "select a wave"){
+        let alert = UIAlertController(title: "Did you enter Wave Info?", message: "Please make sure you selected your Wavelength", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        //alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
+    }else{
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        
+        //if selected note is empty; create a new note; newNote doesnt need segue?
+        //            if(selectedNote == nil)
+        //calling Note class in data model
+        let entity = NSEntityDescription.entity(forEntityName: "Note", in: context)
+        
+        //creating new note ?
+        let newNote = Note(entity: entity!, insertInto: context)
+        newNote.id = noteList.count as NSNumber
+        newNote.title = titleTF.text
+        newNote.desc = descTV.text
+        // self.waves also works here ???
+        newNote.wavelength = waves
+        //
+        newNote.deletedDate = Date()
+        //                if (newNote.title != nil && newNote.desc != nil) {
+        
+        do
                 {//saving to noteList array
-//                    try context.save()
-//                    noteList.append(newNote)
-//                    // ***
-//                    navigationController?.popViewController(animated: true)
+                    //                    try context.save()
+                    //                    noteList.append(newNote)
+                    //                    // ***
+                    //                    navigationController?.popViewController(animated: true)
                     if waves == "0 ft"{
-                    
+                        
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ZeroFTVC") as? ZeroFTVC
                         self.navigationController?.pushViewController(vc!, animated: true)
                     } else if waves == "10 ft"{
@@ -113,68 +112,68 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                     }
                     try context.save()
                     noteList.append(newNote)
-                
-                }
-                catch
-                {
-                    print("context save error")
-                }
                     
-                } }
-            }
-            
-            
-            //if selected note is not empty
-            else //edit
-            { //fetch note
-                let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
-                do {
-                    let results:NSArray = try context.fetch(request) as NSArray
-                    for result in results
-                    {
-                        let note = result as! Note
-                        if(note == selectedNote)
-                        {//display note info?
-                            note.title = titleTF.text
-                            note.desc = descTV.text
-                            try context.save()
-                            navigationController?.popViewController(animated: true)
-                        }
-                    }
                 }
-                catch
-                {
-                    print("Fetch Failed")
-                }
-            }
-        }
-    
-    
-        //Deleting Note
-        @IBAction func DeleteNote(_ sender: Any)
-        {//core data persistent container
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-            //fetching info from Note entity
-            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
-            do {
-                let results:NSArray = try context.fetch(request) as NSArray
-                for result in results
-                {//if note is slected, delete
-                    let note = result as! Note
-                    if(note == selectedNote)
-                    {
-                        note.deletedDate = Date()
-                        try context.save()
-                        navigationController?.popViewController(animated: true) //pop up display
-                    }
-                }
-            }
-            catch
-            {
-                print("Fetch Failed")
-            }
+        catch
+        {
+            print("context save error")
         }
         
     }
+    
+    
+    
+    //if selected note is not empty
+    //            else //edit
+    //            { //fetch note
+    //                let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+    //                do {
+    //                    let results:NSArray = try context.fetch(request) as NSArray
+    //                    for result in results
+    //                    {
+    //                        let note = result as! Note
+    //                        if(note == selectedNote)
+    //                        {//display note info?
+    //                            note.title = titleTF.text
+    //                            note.desc = descTV.text
+    //                            try context.save()
+    //                            navigationController?.popViewController(animated: true)
+    //                        }
+    //                    }
+    //                }
+    //                catch
+    //                {
+    //                    print("Fetch Failed")
+    //                }
+    //            }
+    }
+    
+    
+    //Deleting Note
+    @IBAction func DeleteNote(_ sender: Any)
+    {//core data persistent container
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        //fetching info from Note entity
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        do {
+            let results:NSArray = try context.fetch(request) as NSArray
+            for result in results
+            {//if note is slected, delete
+                let note = result as! Note
+                if(note == selectedNote)
+                {
+                    note.deletedDate = Date()
+                    try context.save()
+                    navigationController?.popViewController(animated: true) //pop up display
+                }
+            }
+        }
+        catch
+        {
+            print("Fetch Failed")
+        }
+    }
+    
+}
 
