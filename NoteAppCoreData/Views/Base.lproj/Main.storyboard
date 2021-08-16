@@ -210,20 +210,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 FT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzI-Qb-ll5">
-                                <rect key="frame" x="183" y="433.5" width="48" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="whT-aE-JzR">
+                                <rect key="frame" x="10" y="54.5" width="394" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ih9-T0-Qpd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5T-W3-QGc">
+                                <rect key="frame" x="350" y="44" width="44" height="30"/>
+                                <state key="normal" title="Sound"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="cEj-LQ-SMR" eventType="touchDragInside" id="7MW-YE-aSg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cdX-I1-uIK"/>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.8901960784313725" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="yzI-Qb-ll5" firstAttribute="centerX" secondItem="8ID-Tb-p4h" secondAttribute="centerX" id="F7x-QP-gAo"/>
-                            <constraint firstItem="yzI-Qb-ll5" firstAttribute="centerY" secondItem="8ID-Tb-p4h" secondAttribute="centerY" id="vCs-gG-v1b"/>
+                            <constraint firstItem="K5T-W3-QGc" firstAttribute="centerX" secondItem="8ID-Tb-p4h" secondAttribute="centerX" constant="165" id="2T4-vF-kGx"/>
+                            <constraint firstItem="whT-aE-JzR" firstAttribute="leading" secondItem="cdX-I1-uIK" secondAttribute="leading" constant="10" id="9ia-Sw-nFA"/>
+                            <constraint firstItem="cdX-I1-uIK" firstAttribute="trailing" secondItem="whT-aE-JzR" secondAttribute="trailing" constant="10" id="KHb-UW-k06"/>
+                            <constraint firstItem="K5T-W3-QGc" firstAttribute="centerY" secondItem="8ID-Tb-p4h" secondAttribute="centerY" constant="-389" id="dYv-ra-UhW"/>
+                            <constraint firstItem="whT-aE-JzR" firstAttribute="top" secondItem="cdX-I1-uIK" secondAttribute="top" constant="10" id="m3h-4K-w2x"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="K5T-W3-QGc" id="frq-OV-v4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uay-Sb-xzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -974,6 +987,7 @@
     </scenes>
     <resources>
         <image name="mug" width="1024" height="1024"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="petals" width="1024" height="1024"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rosedesign" width="1024" height="1024"/>
