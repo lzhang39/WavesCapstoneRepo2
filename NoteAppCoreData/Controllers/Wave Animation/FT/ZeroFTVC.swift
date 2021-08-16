@@ -28,11 +28,13 @@ class ZeroFTVC: UIViewController {
     @IBAction func didTapButton() {
         if let player = player, player.isPlaying{
             // stop playback
+            button.setTitle("Play", for: .normal)
             
             player.stop()
         }
         else{
             // set up player, and play
+            button.setTitle("Stop", for: .normal)
             let urlString = Bundle.main.path(forResource: "seagull-beach-sound-effect", ofType: "mp3")
             
             do{
