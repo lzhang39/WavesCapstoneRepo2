@@ -109,6 +109,7 @@ class NoteTableView: UITableViewController
             //select Note
             let selectedJournal : Note!
             selectedJournal = nonDeletedNotes()[indexPath.row]
+            //forces unwrap via '!'
             journalEntry!.selectedJournal = selectedJournal
             
             tableView.deselectRow(at: indexPath, animated: true)
