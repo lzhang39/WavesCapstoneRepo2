@@ -27,10 +27,10 @@ class ZeroFTVC: UIViewController {
     }
     
     
-    @IBAction func didTapButton(_ sender: Any) {
+    @IBAction func buttonTapped(_ sender: Any) {
         let pathToSound = Bundle.main.path(forResource: "seagull-beach-sound-effect", ofType: "mp3")!
         let url = URL(fileURLWithPath: pathToSound)
-        
+
         do{
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer?.play()
@@ -38,7 +38,7 @@ class ZeroFTVC: UIViewController {
         // error handling
     }
 }
-    
+
     
     @objc func backToInitial(sender: AnyObject) {
         // Move to Home screen

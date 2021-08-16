@@ -210,12 +210,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBT-bO-2LV">
-                                <rect key="frame" x="345" y="44" width="52" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymg-WZ-Pe6">
+                                <rect key="frame" x="166" y="427" width="82" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Sounds"/>
                                 <connections>
-                                    <action selector="didTap:" destination="cEj-LQ-SMR" eventType="touchUpInside" id="4ev-pB-GeR"/>
+                                    <action selector="buttonTapped:" destination="cEj-LQ-SMR" eventType="touchUpInside" id="ab7-fi-feC"/>
                                 </connections>
                             </button>
                         </subviews>
