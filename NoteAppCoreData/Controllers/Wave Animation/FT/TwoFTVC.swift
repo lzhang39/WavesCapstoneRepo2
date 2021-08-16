@@ -7,15 +7,26 @@
 
 import UIKit
 import Lottie
+import AVFoundation
 
 class TwoFTVC: UIViewController {
+    
+    var audioPlayer: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Added navigation button
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(backToInitial(sender:)))
-        
         lottieAnimation()
+        
+        let pathToSound = Bundle.main.path(forResource: "Ocean-waves-crashing-sound", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+    }
     }
     
     @objc func backToInitial(sender: AnyObject) {
