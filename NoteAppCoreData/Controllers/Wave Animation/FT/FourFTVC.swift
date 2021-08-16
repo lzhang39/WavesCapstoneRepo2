@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class FourFTVC: UIViewController {
 
@@ -13,6 +14,8 @@ class FourFTVC: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(backToInitial(sender:)))
+        
+        lottieAnimation()
     }
     
     @objc func backToInitial(sender: AnyObject) {
@@ -20,9 +23,25 @@ class FourFTVC: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-        // Do any additional setup after loading the view.
+    func lottieAnimation(){
+        let loadingAnimation = Animation.named("lf30_editor_oosc6awj")
+        let lottieView = AnimationView(animation: loadingAnimation)
+        // 2. SECOND STEP (Adding and setup):
+        self.view.addSubview(lottieView)
+        lottieView.contentMode = .scaleAspectFit
+        lottieView.loopMode = .autoReverse
+        lottieView.play(toFrame: .infinity)
+        lottieView.animationSpeed = 1
+        // 3. THIRD STEP (LAYOUT PREFERENCES):
+        lottieView.translatesAutoresizingMaskIntoConstraints = true
+        NSLayoutConstraint.activate([
+            lottieView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            lottieView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            lottieView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            lottieView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
     }
-    
+        
 
     /*
     // MARK: - Navigation
@@ -34,3 +53,4 @@ class FourFTVC: UIViewController {
     }
     */
 
+}

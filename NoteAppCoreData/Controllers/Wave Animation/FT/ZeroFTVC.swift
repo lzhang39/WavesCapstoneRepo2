@@ -4,8 +4,11 @@
 //
 //  Created by Lin Zhang on 8/12/21.
 //
-
+    
+    
+    
 import UIKit
+import Lottie
 
 class ZeroFTVC: UIViewController {
 
@@ -13,22 +16,31 @@ class ZeroFTVC: UIViewController {
         super.viewDidLoad()
         // Added navigation button
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(backToInitial(sender:)))
+        lottieAnimation()
     }
+    
     @objc func backToInitial(sender: AnyObject) {
         // Move to Home screen
         self.navigationController?.popToRootViewController(animated: true)
     }
-
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func lottieAnimation(){
+        // 1. FIRST STEP (Decoding and Initializing):
+        let loadingAnimation = Animation.named("over-the-sea")
+        let lottieView = AnimationView(animation: loadingAnimation)
+        // 2. SECOND STEP (Adding and setup):
+        self.view.addSubview(lottieView)
+        lottieView.contentMode = .scaleToFill
+        lottieView.loopMode = .loop
+        lottieView.play(toFrame: .infinity)
+        // 3. THIRD STEP (LAYOUT PREFERENCES):
+        lottieView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            lottieView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            lottieView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            lottieView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            lottieView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
     }
-    */
 
 }

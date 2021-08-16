@@ -218,7 +218,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cdX-I1-uIK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.8901960784313725" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yzI-Qb-ll5" firstAttribute="centerX" secondItem="8ID-Tb-p4h" secondAttribute="centerX" id="F7x-QP-gAo"/>
                             <constraint firstItem="yzI-Qb-ll5" firstAttribute="centerY" secondItem="8ID-Tb-p4h" secondAttribute="centerY" id="vCs-gG-v1b"/>
@@ -245,7 +245,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bt3-7Y-V7A"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.89019607840000003" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mjo-Rh-6yQ" firstAttribute="centerY" secondItem="GO1-lj-ymh" secondAttribute="centerY" id="HOq-qz-qPX"/>
                             <constraint firstItem="Mjo-Rh-6yQ" firstAttribute="centerX" secondItem="GO1-lj-ymh" secondAttribute="centerX" id="uPB-Cb-kI3"/>
@@ -272,7 +272,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o5k-0x-jk1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.89019607840000003" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="u14-Sf-ZLt" firstAttribute="centerY" secondItem="BcM-7Z-VMp" secondAttribute="centerY" id="EdA-mM-IF1"/>
                             <constraint firstItem="u14-Sf-ZLt" firstAttribute="centerX" secondItem="BcM-7Z-VMp" secondAttribute="centerX" id="o8a-za-h8o"/>
@@ -805,23 +805,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lnd-J5-xDs">
-                                                    <rect key="frame" x="8" y="8" width="398" height="321"/>
+                                                    <rect key="frame" x="8" y="8" width="398" height="309.5"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="ecF-Ok-NqR">
-                                                    <rect key="frame" x="30" y="390" width="355" height="108"/>
+                                                    <rect key="frame" x="30" y="378.5" width="355" height="119.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZW-Cz-ivS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="32.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-oK-IYN">
-                                                            <rect key="frame" x="0.0" y="87.5" width="355" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="99.5" width="355" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="355" id="Xeb-Bh-bHc"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -936,7 +936,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HuO-ya-IOf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.89019607840000003" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="r5i-Hy-1V1" firstAttribute="centerX" secondItem="qJ5-0M-H12" secondAttribute="centerX" id="KHX-O1-uTP"/>
                             <constraint firstItem="r5i-Hy-1V1" firstAttribute="centerY" secondItem="qJ5-0M-H12" secondAttribute="centerY" id="l0u-BI-buZ"/>
@@ -964,7 +964,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O4G-fR-Bwo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.89019607840000003" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pn-BR-OW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
