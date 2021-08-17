@@ -43,12 +43,12 @@
 		607F9F6426BF57FF00EFB172 /* Wave2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F9F6326BF57FF00EFB172 /* Wave2SwiftUIView.swift */; };
 		607F9F6626BF5CEF00EFB172 /* WaveThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F9F6526BF5CEF00EFB172 /* WaveThreeViewController.swift */; };
 		607F9F6926BF5D1900EFB172 /* Wave3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607F9F6826BF5D1900EFB172 /* Wave3SwiftUIView.swift */; };
+		60DE739A26CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json in Resources */ = {isa = PBXBuildFile; fileRef = 60DE739926CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json */; };
 		60F1176926C6D5600073C7CB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1176826C6D5600073C7CB /* OnboardingViewController.swift */; };
 		60F1176C26C6D8440073C7CB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1176B26C6D8440073C7CB /* UIView+Extension.swift */; };
 		60F1176F26C6D8F10073C7CB /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1176E26C6D8F10073C7CB /* OnboardingSlide.swift */; };
 		60F1177126C6DB600073C7CB /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F1177026C6DB600073C7CB /* OnboardingCollectionViewCell.swift */; };
 		60FBC68226CB26BF00A602DA /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FBC68126CB26BF00A602DA /* QuoteViewController.swift */; };
-		60FBC68826CB38D600A602DA /* 21319-particle-wave-with-depth.json in Resources */ = {isa = PBXBuildFile; fileRef = 60FBC68726CB38D600A602DA /* 21319-particle-wave-with-depth.json */; };
 		8846F2ED26C556CE00473DDC /* ZeroFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846F2EC26C556CE00473DDC /* ZeroFTVC.swift */; };
 		8846F2F226C5583900473DDC /* TwoFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846F2EF26C5583800473DDC /* TwoFTVC.swift */; };
 		8846F2F326C5583900473DDC /* ThreeFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846F2F026C5583900473DDC /* ThreeFTVC.swift */; };
@@ -93,12 +93,12 @@
 		607F9F6326BF57FF00EFB172 /* Wave2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave2SwiftUIView.swift; sourceTree = "<group>"; };
 		607F9F6526BF5CEF00EFB172 /* WaveThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveThreeViewController.swift; sourceTree = "<group>"; };
 		607F9F6826BF5D1900EFB172 /* Wave3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave3SwiftUIView.swift; sourceTree = "<group>"; };
+		60DE739926CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "21319-particle-wave-with-depth (1).json"; sourceTree = "<group>"; };
 		60F1176826C6D5600073C7CB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		60F1176B26C6D8440073C7CB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		60F1176E26C6D8F10073C7CB /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		60F1177026C6DB600073C7CB /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		60FBC68126CB26BF00A602DA /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
-		60FBC68726CB38D600A602DA /* 21319-particle-wave-with-depth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "21319-particle-wave-with-depth.json"; sourceTree = "<group>"; };
 		7F66A98DE5B405E9C8FB5BCF /* Pods-NoteAppCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteAppCoreData.debug.xcconfig"; path = "Target Support Files/Pods-NoteAppCoreData/Pods-NoteAppCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		8846F2EC26C556CE00473DDC /* ZeroFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroFTVC.swift; sourceTree = "<group>"; };
 		8846F2EF26C5583800473DDC /* TwoFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFTVC.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3E01B5D126CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 */,
-				60FBC68726CB38D600A602DA /* 21319-particle-wave-with-depth.json */,
+				60DE739926CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json */,
 				3E01B5D026CA1AFD00D8D79F /* seagull-beach-sound-effect.mp3 */,
 				3E01B5BB26C9FB0000D8D79F /* Lottie Animations */,
 				2E37154525C0FB980037351E /* NoteAppCoreData */,
@@ -380,7 +380,7 @@
 				3E01B5C926CA083D00D8D79F /* over-the-sea.json in Resources */,
 				2E37155625C0FB9B0037351E /* LaunchScreen.storyboard in Resources */,
 				2E37155325C0FB9B0037351E /* Assets.xcassets in Resources */,
-				60FBC68826CB38D600A602DA /* 21319-particle-wave-with-depth.json in Resources */,
+				60DE739A26CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json in Resources */,
 				607369C226C178BC00E14ADF /* wave-loader.json in Resources */,
 				3E01B5C326C9FB1A00D8D79F /* lf30_editor_8etkzbiu.json in Resources */,
 				3E01B5C226C9FB1A00D8D79F /* lf30_editor_vkadnukw.json in Resources */,
