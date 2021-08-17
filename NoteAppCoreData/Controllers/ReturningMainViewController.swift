@@ -24,7 +24,7 @@ class ReturningMainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func lottieAnimation(){
-        let animationView = AnimationView(name: "wave-loader")
+        let animationView = AnimationView(name: "21319-particle-wave-with-depth")
         animationView.contentMode = .scaleAspectFit
         view.addSubview(animationView)
         animationView.play()
