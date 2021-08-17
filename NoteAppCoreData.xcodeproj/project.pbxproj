@@ -126,6 +126,7 @@
 				3E01B5D126CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 */,
 				60DE739926CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json */,
 				3E01B5D026CA1AFD00D8D79F /* seagull-beach-sound-effect.mp3 */,
+				607369C126C178BC00E14ADF /* wave-loader.json */,
 				3E01B5BB26C9FB0000D8D79F /* Lottie Animations */,
 				2E37154525C0FB980037351E /* NoteAppCoreData */,
 				2E37154425C0FB980037351E /* Products */,
@@ -146,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				60F1176A26C6D8260073C7CB /* Extensions */,
-				607369C126C178BC00E14ADF /* wave-loader.json */,
 				2E37154625C0FB980037351E /* AppDelegate.swift */,
 				2E37154825C0FB980037351E /* SceneDelegate.swift */,
 				607F9F3526BF091900EFB172 /* Data Model */,

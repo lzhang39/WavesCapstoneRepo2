@@ -1,13 +1,51 @@
 import UIKit
 import CoreData
 
+// MUST TURN ON SIMULATE LOCATION WHENEVER TESTING under debug->
+import CoreLocation
+ 
 
-//entering note info
-class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+
+class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CLLocationManagerDelegate {
     
     // Make global variable
     var waves:String = "select a wave"
     
+    
+    // LOCATION PERMISSIONS for API CALL
+     let locationManager = CLLocationManager()
+     var currentLocation: CLLocation?
+
+     func setupLocation() {
+         locationManager.delegate = self
+         locationManager.requestWhenInUseAuthorization()
+         locationManager.startUpdatingLocation()
+     }
+     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+         if !locations.isEmpty, currentLocation == nil {
+             currentLocation = locations.first
+             locationManager.stopUpdatingLocation()
+             requestWeatherForLocation()
+         }
+     }
+     func requestWeatherForLocation() {
+         guard let currentLocation = currentLocation else {
+             return
+         }
+         let lon = currentLocation.coordinate.longitude
+         let lat = currentLocation.coordinate.latitude
+
+         print("\(lon) | \(lat)")
+     }
+    
+    // either works !
+//     override func viewDidAppear(_ animated: Bool) {
+//         super.viewDidAppear(animated)
+//         setupLocation()
+//     }
+     
+
+
     
     //Title text Field
     @IBOutlet weak var titleTF: UITextField!
@@ -16,13 +54,13 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     var selectedNote: Note? = nil //class?
     
-    
     @IBOutlet weak var picker: UIPickerView!
     
     var pickerData = [["select a wave" ,"0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
     
     override func viewDidLoad(){
         super.viewDidLoad()
+//        setupLocation()
         
         // Connect data:
         self.picker.delegate = self
@@ -34,6 +72,13 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             descTV.text = selectedNote?.desc
         }
     }
+    
+    // PRINTS LAT/LON IN THE CONSOLE
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupLocation()
+    }
+    
     
     
     // Number of columns of data
@@ -57,7 +102,6 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     
-    
     @IBAction func saveAction(_ sender: Any)
     { if (waves == "select a wave"){
         let alert = UIAlertController(title: "Did you enter Wave Info?", message: "Please make sure you selected your Wavelength", preferredStyle: .alert)
@@ -70,13 +114,12 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
         
-        
         //if selected note is empty; create a new note; newNote doesnt need segue?
         //            if(selectedNote == nil)
         //calling Note class in data model
         let entity = NSEntityDescription.entity(forEntityName: "Note", in: context)
         
-        //creating new note ?
+        //creating new note
         let newNote = Note(entity: entity!, insertInto: context)
         newNote.id = noteList.count as NSNumber
         newNote.title = titleTF.text
@@ -112,7 +155,6 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                     }
                     try context.save()
                     noteList.append(newNote)
-                    
                 }
         catch
         {
@@ -146,34 +188,35 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     //                    print("Fetch Failed")
     //                }
     //            }
-    }
     
     
     //Deleting Note
-    @IBAction func DeleteNote(_ sender: Any)
-    {//core data persistent container
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-        //fetching info from Note entity
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
-        do {
-            let results:NSArray = try context.fetch(request) as NSArray
-            for result in results
-            {//if note is slected, delete
-                let note = result as! Note
-                if(note == selectedNote)
-                {
-                    note.deletedDate = Date()
-                    try context.save()
-                    navigationController?.popViewController(animated: true) //pop up display
-                }
-            }
-        }
-        catch
-        {
-            print("Fetch Failed")
-        }
-    }
+//    @IBAction func DeleteNote(_ sender: Any)
+//    {//core data persistent container
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+//        //fetching info from Note entity
+//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+//        do {
+//            let results:NSArray = try context.fetch(request) as NSArray
+//            for result in results
+//            {//if note is slected, delete
+//                let note = result as! Note
+//                if(note == selectedNote)
+//                {
+//                    note.deletedDate = Date()
+//                    try context.save()
+//                    navigationController?.popViewController(animated: true) //pop up display
+//                }
+//            }
+//        }
+//        catch
+//        {
+//            print("Fetch Failed")
+//        }
+//    }
+//
     
+    }
 }
 
