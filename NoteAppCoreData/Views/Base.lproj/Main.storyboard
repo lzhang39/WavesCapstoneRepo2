@@ -992,7 +992,7 @@
         <scene sceneID="oBA-bg-bQQ">
             <objects>
                 <viewController storyboardIdentifier="ThreeFTVC" id="h6X-99-sb2" customClass="ThreeFTVC" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qJ5-0M-H12">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="qJ5-0M-H12">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
