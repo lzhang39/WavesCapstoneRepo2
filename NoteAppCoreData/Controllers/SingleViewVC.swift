@@ -19,7 +19,11 @@ class SingleViewVC: UIViewController {
     @IBOutlet weak var Date1: UILabel!
     @IBOutlet weak var Wavelength: UILabel!
     
+    @IBOutlet weak var moodCity1: UILabel!
+    @IBOutlet weak var moodWeather1: UILabel!
+    
     var selectedJournal : Note!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +35,11 @@ class SingleViewVC: UIViewController {
 
         Wavelength.text = selectedJournal.wavelength
         Description1.text = selectedJournal.desc
+        
+        
+        moodCity1.text = selectedJournal.moodCity
+        moodWeather1.text = selectedJournal.moodWeather
+    
         
     }
 

@@ -22,6 +22,8 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var waves:String = "select a wave"
 //    var lat:Double?
 //    var lon:Double?
+    var globalName:String = ""
+    var globalWeather:String = ""
     
 
     //Title text Field
@@ -104,9 +106,13 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         guard let json = result else {
             return
         }
-            
+        
         print(json.name)
         print(json.weather[0].description)
+            
+        self.globalName = json.name
+        self.globalWeather = json.weather[0].description
+            
         }).resume()
 //            lon = currentLocation.coordinate.longitude
 //            lat = currentLocation.coordinate.latitude
@@ -161,8 +167,11 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         newNote.desc = descTV.text
         // self.waves also works here ???
         newNote.wavelength = waves
-        //
         newNote.deletedDate = Date()
+        
+        //
+        newNote.moodCity = globalName
+        newNote.moodWeather = globalWeather
         //                if (newNote.title != nil && newNote.desc != nil) {
         
         do
