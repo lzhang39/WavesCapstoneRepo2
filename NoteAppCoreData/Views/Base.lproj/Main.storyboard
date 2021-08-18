@@ -279,12 +279,6 @@
                                 <color key="textColor" red="0.45524730672380059" green="0.6704211221694798" blue="0.74052007090738636" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-0i-Oo8">
-                                <rect key="frame" x="43" y="521" width="331" height="310"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTJ-Td-nRB">
                                 <rect key="frame" x="51" y="419" width="323" height="94"/>
                                 <constraints>
@@ -306,6 +300,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3JJ-tm-Nza">
+                                <rect key="frame" x="43" y="521" width="339" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9597269893" green="0.96682602169999998" blue="0.8627296686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LiF-7g-JFf"/>
                         <color key="backgroundColor" red="0.95980650190000005" green="0.96267610790000002" blue="0.87057477240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -313,16 +315,12 @@
                             <constraint firstItem="iJB-Rj-8dH" firstAttribute="top" secondItem="hvN-he-702" secondAttribute="bottom" constant="21" id="4mH-Lo-YFg"/>
                             <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="iJB-Rj-8dH" secondAttribute="centerX" constant="125.75" id="7WA-5l-GiU"/>
                             <constraint firstItem="pgd-Uy-HXx" firstAttribute="top" secondItem="LiF-7g-JFf" secondAttribute="top" constant="199" id="7ht-9B-ghf"/>
-                            <constraint firstItem="Pzb-0i-Oo8" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="43" id="Dhj-YW-zS2"/>
                             <constraint firstItem="JdN-A1-i1x" firstAttribute="leading" secondItem="IKp-jk-ucA" secondAttribute="leadingMargin" constant="23" id="DpY-9x-xnc"/>
                             <constraint firstItem="hvN-he-702" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="46" id="MUN-Bb-FXo"/>
-                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="trailing" secondItem="Pzb-0i-Oo8" secondAttribute="trailing" id="Nw5-rH-FsW"/>
                             <constraint firstItem="hvN-he-702" firstAttribute="top" secondItem="LiF-7g-JFf" secondAttribute="top" constant="164" id="QDy-7v-d72"/>
-                            <constraint firstItem="Pzb-0i-Oo8" firstAttribute="top" secondItem="lTJ-Td-nRB" secondAttribute="bottom" constant="8" id="Rty-rN-UPv"/>
                             <constraint firstItem="pgd-Uy-HXx" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="43" id="YQg-Uh-4dd"/>
                             <constraint firstItem="lTJ-Td-nRB" firstAttribute="top" secondItem="iJB-Rj-8dH" secondAttribute="bottom" constant="30" id="cVe-0q-z1H"/>
                             <constraint firstItem="lTJ-Td-nRB" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="51" id="gfH-us-o7v"/>
-                            <constraint firstItem="LiF-7g-JFf" firstAttribute="bottom" secondItem="Pzb-0i-Oo8" secondAttribute="bottom" constant="31" id="ipE-xK-5RJ"/>
                             <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" constant="-13.5" id="kMv-st-wUC"/>
                             <constraint firstItem="lTJ-Td-nRB" firstAttribute="top" secondItem="JdN-A1-i1x" secondAttribute="bottom" constant="8" id="lqh-yh-7VZ"/>
                             <constraint firstItem="JdN-A1-i1x" firstAttribute="centerX" secondItem="iJB-Rj-8dH" secondAttribute="centerX" constant="162.5" id="naZ-f8-M4S"/>
@@ -332,7 +330,7 @@
                     <navigationItem key="navigationItem" id="Bot-X8-C2X"/>
                     <connections>
                         <outlet property="Date1" destination="hvN-he-702" id="wgm-wg-8LJ"/>
-                        <outlet property="Description1" destination="Pzb-0i-Oo8" id="cIL-Mn-DI0"/>
+                        <outlet property="Description1" destination="3JJ-tm-Nza" id="PHo-3o-ezn"/>
                         <outlet property="Title1" destination="lTJ-Td-nRB" id="Ndm-m8-8QN"/>
                         <outlet property="Wavelength" destination="iJB-Rj-8dH" id="MPx-fU-RMR"/>
                         <outlet property="moodCity1" destination="pgd-Uy-HXx" id="nCm-Iu-I2U"/>

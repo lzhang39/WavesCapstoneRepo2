@@ -15,12 +15,13 @@ import Lottie
 
 class SingleViewVC: UIViewController {
     
-    @IBOutlet weak var Description1: UILabel!
+    //@IBOutlet weak var Description1: UILabel!
     @IBOutlet weak var Title1: UILabel!
     @IBOutlet weak var Date1: UILabel!
     @IBOutlet weak var Wavelength: UILabel!
     
-   
+    @IBOutlet weak var Description1: UITextView!
+    
     
     @IBOutlet weak var moodWeather1: UILabel!
     @IBOutlet weak var moodCity1: UILabel!
