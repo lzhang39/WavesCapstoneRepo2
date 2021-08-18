@@ -5,16 +5,6 @@ import CoreData
 import CoreLocation
  
 
-struct Response: Codable {
-    let weather: [Mood]
-//    let main: Temperature
-    let name: String
-}
-struct Mood: Codable {
-    let description: String
-}
-    
-    
 //struct Temperature: Codable {
 //    let feels_like: Double
 //}
@@ -30,48 +20,10 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     // Make global variable
     var waves:String = "select a wave"
+//    var lat:Double?
+//    var lon:Double?
     
-    var lat:Double?
-    var lon:Double?
-    
-    
-    // LOCATION PERMISSIONS for API CALL
-     let locationManager = CLLocationManager()
-     var currentLocation: CLLocation?
 
-     func setupLocation() {
-         locationManager.delegate = self
-         locationManager.requestWhenInUseAuthorization()
-         locationManager.startUpdatingLocation()
-     }
-     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         if !locations.isEmpty, currentLocation == nil {
-             currentLocation = locations.first
-             locationManager.stopUpdatingLocation()
-             requestWeatherForLocation()
-         }
-     }
-     func requestWeatherForLocation() {
-         guard let currentLocation = currentLocation else {
-             return
-         }
-         lon = currentLocation.coordinate.longitude
-         lat = currentLocation.coordinate.latitude
-
-        // USE LAT! unconditional unwrapping - lat is optional
-        //
-        print("\(lon!) | \(lat!)")
-     }
-    
-    // either works !
-//     override func viewDidAppear(_ animated: Bool) {
-//         super.viewDidAppear(animated)
-//         setupLocation()
-//     }
-     
-
-
-    
     //Title text Field
     @IBOutlet weak var titleTF: UITextField!
     //Description text Field
@@ -80,16 +32,12 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var selectedNote: Note? = nil //class?
     
     @IBOutlet weak var picker: UIPickerView!
-    
     var pickerData = [["select a wave" ,"0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
-    
     
     override func viewDidLoad(){
         super.viewDidLoad()
 //        setupLocation()
-        
-        let url = "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
-        getData(from: url)
+//        getData(from: url)
         
         // Connect data:
         self.picker.delegate = self
@@ -102,19 +50,41 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
     }
     
+    
 //     PRINTS LAT/LON IN THE CONSOLE (viewDidAppear calls every time we enter this screen)
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupLocation()
-        
-//        let url = "api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
-        
     }
-    
-    
-    private func getData(from url: String) {
+        
+    // LOCATION PERMISSIONS for API CALL
+    let locationManager = CLLocationManager()
+    var currentLocation: CLLocation?
+        
+    func setupLocation() {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if !locations.isEmpty, currentLocation == nil {
+            currentLocation = locations.first
+            locationManager.stopUpdatingLocation()
+            requestWeatherForLocation()
+        }
+    }
+    func requestWeatherForLocation() {
+        guard let currentLocation = currentLocation else {
+            return
+        }
+        let lon = currentLocation.coordinate.longitude
+        let lat = currentLocation.coordinate.latitude
+//        print("\(lon) | \(lat)")
+        
+        let url = "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
+        
         // MAKE API REQUEST !!!
-        let task = URLSession.shared.dataTask(with: URL(string:url)!, completionHandler: { data, response, error in
+        URLSession.shared.dataTask(with: URL(string:url)!, completionHandler: { data, response, error in
             
             //API Validation
             guard let data = data, error == nil else {
@@ -137,13 +107,13 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             
         print(json.name)
         print(json.weather[0].description)
-        })
-
-        task.resume()
+        }).resume()
+//            lon = currentLocation.coordinate.longitude
+//            lat = currentLocation.coordinate.latitude
+       // USE LAT! unconditional unwrapping - lat is optional
+//           print("\(lon!) | \(lat!)")
     }
-    
-    
-    
+   
     
     
     // Number of columns of data
@@ -281,6 +251,14 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
 //    }
 //
     
-    }
 }
 
+struct Response: Codable {
+    let weather: [Mood]
+//    let main: Temperature
+    let name: String
+}
+struct Mood: Codable {
+    let description: String
+}
+}
