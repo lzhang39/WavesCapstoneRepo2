@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import Lottie
 
 //var noteList = [Note]()
 
@@ -23,7 +24,7 @@ class SingleViewVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        lottieAnimation()
         Title1.text = selectedJournal.title
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -31,6 +32,21 @@ class SingleViewVC: UIViewController {
 
         Wavelength.text = selectedJournal.wavelength
         Description1.text = selectedJournal.desc
+        
+        
+        
+    }
+    
+    
+    func lottieAnimation(){
+        let animationView = AnimationView(name: "69971-sea-view")
+        animationView.contentMode = .scaleAspectFit
+        view.addSubview(animationView)
+        animationView.play()
+        animationView.loopMode = .loop
+        //bigger y, lower the image
+        animationView.frame = CGRect(x: 0, y: 46, width: 414, height: 220)
+        //animationView.center = view.topAnchor
         
     }
 

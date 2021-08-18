@@ -21,13 +21,13 @@ class GraphViewController: UIViewController, ChartViewDelegate {
         let yAxis = chartView.leftAxis
         
         yAxis.labelFont = .boldSystemFont(ofSize: 12)
-        yAxis.setLabelCount(6, force: false)
+        yAxis.setLabelCount(5, force: false)
         yAxis.labelTextColor = .white
         yAxis.labelPosition = .outsideChart
         yAxis.axisLineColor = .white
         
         chartView.xAxis.labelFont = .boldSystemFont(ofSize: 12)
-        chartView.xAxis.setLabelCount(6, force: false)
+        chartView.xAxis.setLabelCount(10, force: false)
         chartView.xAxis.labelTextColor = .white
         chartView.xAxis.labelPosition = .bottom
         chartView.xAxis.axisLineColor = .systemBlue
@@ -59,6 +59,7 @@ class GraphViewController: UIViewController, ChartViewDelegate {
     func setData() {
         let set1 = LineChartDataSet(entries: yValues, label: "Entries")
         set1.mode = .cubicBezier
+        
         //set1.drawCirclesEnabled = false
         set1.lineWidth = 3
         
@@ -73,12 +74,63 @@ class GraphViewController: UIViewController, ChartViewDelegate {
   
     let yValues: [ChartDataEntry] = [
         
+        //SCROLLING feature for large datasets
         ChartDataEntry(x: 1.0, y: 10.0),
         ChartDataEntry(x: 2.0, y: 25.0),
         ChartDataEntry(x: 3.0, y: 0.0),
         ChartDataEntry(x: 4.0, y: 50.0),
         ChartDataEntry(x: 5.0, y: 0.0),
-        ChartDataEntry(x: 6.0, y: 15.0)
+        ChartDataEntry(x: 6.0, y: 15.0),
+        
+        ChartDataEntry(x: 7.0, y: 15.0),
+        ChartDataEntry(x: 8.0, y: 15.0),
+        ChartDataEntry(x: 9.0, y: 15.0),
+        ChartDataEntry(x: 9.0, y: 15.0),
+        ChartDataEntry(x: 10.0, y: 15.0),
+        ChartDataEntry(x: 11.0, y: 15.0),
+        ChartDataEntry(x: 12.0, y: 15.0),
+        ChartDataEntry(x: 13.0, y: 15.0),
+        ChartDataEntry(x: 14.0, y: 15.0),
+        ChartDataEntry(x: 15.0, y: 8.0),
+        
+        ChartDataEntry(x: 16.0, y: 15.0),
+        ChartDataEntry(x: 17.0, y: 15.0),
+        ChartDataEntry(x: 18.0, y: 15.0),
+        ChartDataEntry(x: 19.0, y: 15.0),
+        ChartDataEntry(x: 20.0, y: 15.0),
+        ChartDataEntry(x: 21.0, y: 15.0),
+        ChartDataEntry(x: 22.0, y: 15.0),
+        ChartDataEntry(x: 23.0, y: 15.0),
+        ChartDataEntry(x: 24.0, y: 15.0),
+        ChartDataEntry(x: 25.0, y: 8.0)
+
     ]
 }
+
+
+
+//var selectedJournal : Note!
+//
+//override func viewDidLoad() {
+//    super.viewDidLoad()
+//
+//    Wavelength = selectedJournal.wavelength
+//    JournalID = selectedJournal.id
+//
+//
+//}
+//
+//
+//var yourValue: Float {
+//        get {
+//
+//            return NSNumberFormatter().numberFromString(selectedJournal.text!)!.floatValue
+//        }
+//
+//        set {
+//            selectedJournal.text = "\(newValue)"
+//        }
+    
+    
+
 

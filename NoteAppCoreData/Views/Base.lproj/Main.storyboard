@@ -225,11 +225,11 @@
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">"Alright, here goes. I'm old. What that means is that I've survived (so far) and a lot of people I've known and loved did not. I've lost friends, best friends, acquaintances, co-workers, grandparents, mom, relatives, teachers, mentors, students, neighbors, and a host of other folks. I have no children, and I can't imagine the pain it must be to lose a child. But here's my two cents. I wish I could say you get used to people dying. I never did. I don't want to. It tears a hole through me whenever somebody I love dies, no matter the circumstances. \n But I don't want it to "not matter". I don't want it to be something that just passes. My scars are a testament to the love and the relationship that I had for and with that person. And if the scar is deep, so was the love. So be it. Scars are a testament to life. Scars are a testament that I can love deeply and live deeply and be cut, or even gouged, and that I can heal and continue to live and continue to love. And the scar tissue is stronger than the original flesh ever was. Scars are a testament to life. Scars are only ugly to people who can't see. As for grief, you'll find it comes in waves. When the ship is first wrecked, you're drowning, with wreckage all around you. Everything floating around you reminds you of the beauty and the magnificence of the ship that was, and is no more. And all you can do is float. You find some piece of the wreckage and you hang on for a while. Maybe it's some physical thing. Maybe it's a happy memory or a photograph. Maybe it's a person who is also floating. For a while, all you can do is float. Stay alive. In the beginning, the waves are 100 feet tall and crash over you without mercy. They come 10 seconds apart and don't even give you time to catch your breath. All you can do is hang on and float. After a while, maybe weeks, maybe months, you'll find the waves are still 100 feet tall, but they come further apart. When they come, they still crash all over you and wipe you out. But in between, you can breathe, you can function. You never know what's going to trigger the grief. It might be a song, a picture, a street intersection, the smell of a cup of coffee. It can be just about anything...and the wave comes crashing. But in between waves, there is life. Somewhere down the line, and it's different for everybody, you find that the waves are only 80 feet tall. Or 50 feet tall. And while they still come, they come further apart. You can see them coming. An anniversary, a birthday, or Christmas, or landing at O'Hare. You can see it coming, for the most part, and prepare yourself. And when it washes over you, you know that somehow you will, again, come out the other side. Soaking wet, sputtering, still hanging on to some tiny piece of the wreckage, but you'll come out. Take it from an old guy. The waves never stop coming, and somehow you don't really want them to. But you learn that you'll survive them. And other waves will come. And you'll survive them too. If you're lucky, you'll have lots of scars from lots of loves. And lots of shipwrecks."</string>
+                                        <mutableString key="content">"Alright, here goes. I'm old. What that means is that I've survived (so far) and a lot of people I've known and loved did not. I've lost friends, best friends, acquaintances, co-workers, grandparents, mom, relatives, teachers, mentors, students, neighbors, and a host of other folks. I have no children, and I can't imagine the pain it must be to lose a child. But here's my two cents. I wish I could say you get used to people dying. I never did. I don't want to. It tears a hole through me whenever somebody I love dies, no matter the circumstances.  But I don't want it to "not matter". I don't want it to be something that just passes. My scars are a testament to the love and the relationship that I had for and with that person. And if the scar is deep, so was the love. So be it. Scars are a testament to life. Scars are a testament that I can love deeply and live deeply and be cut, or even gouged, and that I can heal and continue to live and continue to love. And the scar tissue is stronger than the original flesh ever was. Scars are a testament to life. Scars are only ugly to people who can't see. As for grief, you'll find it comes in waves. When the ship is first wrecked, you're drowning, with wreckage all around you. Everything floating around you reminds you of the beauty and the magnificence of the ship that was, and is no more. And all you can do is float. You find some piece of the wreckage and you hang on for a while. Maybe it's some physical thing. Maybe it's a happy memory or a photograph. Maybe it's a person who is also floating. For a while, all you can do is float. Stay alive. In the beginning, the waves are 100 feet tall and crash over you without mercy. They come 10 seconds apart and don't even give you time to catch your breath. All you can do is hang on and float. After a while, maybe weeks, maybe months, you'll find the waves are still 100 feet tall, but they come further apart. When they come, they still crash all over you and wipe you out. But in between, you can breathe, you can function. You never know what's going to trigger the grief. It might be a song, a picture, a street intersection, the smell of a cup of coffee. It can be just about anything...and the wave comes crashing. But in between waves, there is life. Somewhere down the line, and it's different for everybody, you find that the waves are only 80 feet tall. Or 50 feet tall. And while they still come, they come further apart. You can see them coming. An anniversary, a birthday, or Christmas, or landing at O'Hare. You can see it coming, for the most part, and prepare yourself. And when it washes over you, you know that somehow you will, again, come out the other side. Soaking wet, sputtering, still hanging on to some tiny piece of the wreckage, but you'll come out. Take it from an old guy. The waves never stop coming, and somehow you don't really want them to. But you learn that you'll survive them. And other waves will come. And you'll survive them too. If you're lucky, you'll have lots of scars from lots of loves. And lots of shipwrecks."</mutableString>
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" metaFont="system" size="22"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacingBefore="5" headIndent="10" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -253,39 +253,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle" translatesAutoresizingMaskIntoConstraints="NO" id="zQW-WV-AO9">
-                                <rect key="frame" x="87" y="98" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="RCr-bL-7D8"/>
-                                    <constraint firstAttribute="width" constant="240" id="fgy-6l-wGq"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvN-he-702">
                                 <rect key="frame" x="99" y="263" width="216" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="RjL-u4-9SD"/>
-                                    <constraint firstAttribute="height" constant="43" id="tHk-qg-V8U"/>
+                                    <constraint firstAttribute="height" constant="43" id="8Kr-ku-2ww"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAVELENGTH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJB-Rj-8dH">
-                                <rect key="frame" x="151" y="322" width="112" height="21"/>
+                                <rect key="frame" x="159.5" y="322" width="95" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="Tdg-pL-nUy"/>
-                                    <constraint firstAttribute="height" constant="21" id="dVN-up-P7T"/>
+                                    <constraint firstAttribute="height" constant="21" id="bvp-kO-goA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-0i-Oo8">
                                 <rect key="frame" x="43" y="521" width="331" height="310"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="331" id="EAT-tf-faX"/>
-                                    <constraint firstAttribute="height" constant="310" id="faW-er-ciZ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -293,27 +280,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTJ-Td-nRB">
                                 <rect key="frame" x="51" y="419" width="323" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="94" id="IoJ-vd-YEU"/>
-                                    <constraint firstAttribute="width" constant="323" id="ssD-Il-1WL"/>
+                                    <constraint firstAttribute="height" constant="94" id="gc5-Oz-xVV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LiF-7g-JFf"/>
-                        <color key="backgroundColor" red="0.96470588235294119" green="0.8901960784313725" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.95980650190000005" green="0.96267610790000002" blue="0.87057477240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="zQW-WV-AO9" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" id="00X-9h-N2r"/>
-                            <constraint firstItem="Pzb-0i-Oo8" firstAttribute="top" secondItem="lTJ-Td-nRB" secondAttribute="bottom" constant="8" id="Bae-EQ-440"/>
-                            <constraint firstItem="iJB-Rj-8dH" firstAttribute="top" secondItem="hvN-he-702" secondAttribute="bottom" constant="16" id="O2X-0q-m9c"/>
-                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" constant="5.5" id="a6m-Oc-Xjj"/>
-                            <constraint firstItem="Pzb-0i-Oo8" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" constant="1.5" id="dk0-K8-woW"/>
-                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="top" secondItem="iJB-Rj-8dH" secondAttribute="bottom" constant="76" id="hVf-Ib-S3X"/>
-                            <constraint firstItem="zQW-WV-AO9" firstAttribute="top" secondItem="IKp-jk-ucA" secondAttribute="top" constant="98" id="n58-Jh-PGd"/>
-                            <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" id="uUO-7v-Lsm"/>
-                            <constraint firstItem="hvN-he-702" firstAttribute="top" secondItem="zQW-WV-AO9" secondAttribute="bottom" constant="37" id="ujJ-6z-24p"/>
-                            <constraint firstItem="iJB-Rj-8dH" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" id="xzP-49-DYO"/>
+                            <constraint firstItem="iJB-Rj-8dH" firstAttribute="top" secondItem="hvN-he-702" secondAttribute="bottom" constant="16" id="4mH-Lo-YFg"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="iJB-Rj-8dH" secondAttribute="centerX" id="7WA-5l-GiU"/>
+                            <constraint firstItem="Pzb-0i-Oo8" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="43" id="Dhj-YW-zS2"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="99" id="MUN-Bb-FXo"/>
+                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="trailing" secondItem="Pzb-0i-Oo8" secondAttribute="trailing" id="Nw5-rH-FsW"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="top" secondItem="LiF-7g-JFf" secondAttribute="top" constant="123" id="QDy-7v-d72"/>
+                            <constraint firstItem="Pzb-0i-Oo8" firstAttribute="top" secondItem="lTJ-Td-nRB" secondAttribute="bottom" constant="8" id="Rty-rN-UPv"/>
+                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="top" secondItem="iJB-Rj-8dH" secondAttribute="bottom" constant="76" id="cVe-0q-z1H"/>
+                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="51" id="gfH-us-o7v"/>
+                            <constraint firstItem="LiF-7g-JFf" firstAttribute="bottom" secondItem="Pzb-0i-Oo8" secondAttribute="bottom" constant="31" id="ipE-xK-5RJ"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" id="kMv-st-wUC"/>
+                            <constraint firstItem="LiF-7g-JFf" firstAttribute="trailing" secondItem="lTJ-Td-nRB" secondAttribute="trailing" constant="40" id="ng1-dJ-qU1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bot-X8-C2X"/>
@@ -326,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0s-hz-80c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867" y="-984"/>
+            <point key="canvasLocation" x="1866.6666666666667" y="-984.375"/>
         </scene>
         <!--ZeroFTVC-->
         <scene sceneID="XFN-QX-JhX">
