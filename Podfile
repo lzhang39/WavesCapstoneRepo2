@@ -6,5 +6,7 @@ target 'NoteAppCoreData' do
 
   # Pods for NoteAppCoreData
 
+pod 'Charts'
+pod 'TinyConstraints'
 
 end
