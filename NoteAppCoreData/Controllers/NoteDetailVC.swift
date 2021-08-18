@@ -6,15 +6,18 @@ import CoreLocation
  
 
 struct Response: Codable {
-    let weather: Mood
-    let main: Temperature
+    let weather: [Mood]
+//    let main: Temperature
+    let name: String
 }
 struct Mood: Codable {
     let description: String
 }
-struct Temperature: Codable {
-    let feels_like: Double
-}
+    
+    
+//struct Temperature: Codable {
+//    let feels_like: Double
+//}
 
 // HOW DO WE DO SECRETS MGMT IN SWIFT/IOS ???
 //    enum Secrets {
@@ -27,6 +30,9 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     // Make global variable
     var waves:String = "select a wave"
+    
+    var lat:Double?
+    var lon:Double?
     
     
     // LOCATION PERMISSIONS for API CALL
@@ -49,10 +55,12 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
          guard let currentLocation = currentLocation else {
              return
          }
-         let lon = currentLocation.coordinate.longitude
-         let lat = currentLocation.coordinate.latitude
+         lon = currentLocation.coordinate.longitude
+         lat = currentLocation.coordinate.latitude
 
-         print("\(lon) | \(lat)")
+        // USE LAT! unconditional unwrapping - lat is optional
+        //
+        print("\(lon!) | \(lat!)")
      }
     
     // either works !
@@ -80,6 +88,9 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         super.viewDidLoad()
 //        setupLocation()
         
+        let url = "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
+        getData(from: url)
+        
         // Connect data:
         self.picker.delegate = self
         self.picker.dataSource = self
@@ -91,15 +102,12 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
     }
     
-    // PRINTS LAT/LON IN THE CONSOLE
+//     PRINTS LAT/LON IN THE CONSOLE (viewDidAppear calls every time we enter this screen)
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        setupLocation()
-        
+        setupLocation()
         
 //        let url = "api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
-        let url = "api.openweathermap.org/data/2.5/weather?lat=40.712776&lon=-74.005974&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
-        getData(from: url)
         
     }
     
@@ -107,11 +115,13 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     private func getData(from url: String) {
         // MAKE API REQUEST !!!
         let task = URLSession.shared.dataTask(with: URL(string:url)!, completionHandler: { data, response, error in
+            
             //API Validation
             guard let data = data, error == nil else {
                 print("something went wrong")
                 return
             }
+            
             // have data = JSON decoding !
             //Convert data using JSON decoder to models/some object to use
         var result: Response?
@@ -124,13 +134,12 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         guard let json = result else {
             return
         }
-
-        print(json.weather.description)
-        print(json.main.feels_like)
+            
+        print(json.name)
+        print(json.weather[0].description)
         })
 
         task.resume()
-
     }
     
     
