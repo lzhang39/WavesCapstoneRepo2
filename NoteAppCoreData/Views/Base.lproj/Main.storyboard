@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2v-hP-8So">
-                                <rect key="frame" x="72" y="370" width="260" height="55"/>
-                                <color key="backgroundColor" red="0.59215686274509804" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <rect key="frame" x="72" y="370" width="260" height="63"/>
+                                <color key="backgroundColor" red="0.55570412292455995" green="0.89146875034297446" blue="0.89989453574694556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="36"/>
                                 <state key="normal" title="Enter Journal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -34,9 +34,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUJ-7J-SS3">
-                                <rect key="frame" x="72" y="490" width="260" height="55"/>
-                                <color key="backgroundColor" red="0.59215686274509804" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <rect key="frame" x="72" y="498" width="260" height="63"/>
+                                <color key="backgroundColor" red="0.55570412290000004" green="0.89146875029999995" blue="0.8998945357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="36"/>
                                 <state key="normal" title="Resources">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -45,9 +45,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbj-1u-9eX">
-                                <rect key="frame" x="72" y="610" width="260" height="55"/>
-                                <color key="backgroundColor" red="0.59215686274509804" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <rect key="frame" x="72" y="626" width="260" height="63"/>
+                                <color key="backgroundColor" red="0.55570412290000004" green="0.89146875029999995" blue="0.8998945357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="36"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -65,7 +65,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u83-1l-mcc">
                                 <rect key="frame" x="59" y="291" width="286" height="42"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
-                                <color key="textColor" red="0.59215686274509804" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.55570412290000004" green="0.89146875029999995" blue="0.8998945357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turtle" translatesAutoresizingMaskIntoConstraints="NO" id="FJW-k2-Tpv">
@@ -149,17 +149,6 @@
                                     <constraint firstAttribute="height" constant="128" id="9CQ-HV-yuX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-Fc-XqJ">
-                                <rect key="frame" x="107" y="355" width="200" height="55"/>
-                                <color key="backgroundColor" red="0.59215686270000001" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Quote">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="yHG-VU-wSA" kind="show" id="tC5-dc-lR3"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1I-Fu-Q3g">
                                 <rect key="frame" x="69" y="241" width="276" height="37"/>
                                 <constraints>
@@ -170,13 +159,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcx-0N-tJq">
-                                <rect key="frame" x="107" y="473" width="200" height="53"/>
-                                <color key="backgroundColor" red="0.59215686270000001" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="58" y="465" width="298" height="77"/>
+                                <color key="backgroundColor" red="0.55570412290000004" green="0.89146875029999995" blue="0.8998945357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="TxB-gt-3iZ"/>
+                                    <constraint firstAttribute="height" constant="77" id="TxB-gt-3iZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="TDP LINK">
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="36"/>
+                                <state key="normal" title="The Dinner Party">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -184,22 +173,33 @@
                                     <action selector="WebLink:" destination="vPZ-k8-gMS" eventType="touchUpInside" id="AKR-vm-a4Q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-Fc-XqJ">
+                                <rect key="frame" x="74" y="352" width="266" height="74"/>
+                                <color key="backgroundColor" red="0.55570412290000004" green="0.89146875029999995" blue="0.8998945357" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="36"/>
+                                <state key="normal" title="Waves Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yHG-VU-wSA" kind="show" id="tC5-dc-lR3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tjv-7J-pjL"/>
                         <color key="backgroundColor" red="0.96848052740000001" green="0.91723498660000002" blue="0.84269406000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="rb8-Fc-XqJ" firstAttribute="trailing" secondItem="dcx-0N-tJq" secondAttribute="trailing" id="0ob-jU-oQF"/>
+                            <constraint firstItem="rb8-Fc-XqJ" firstAttribute="trailing" secondItem="dcx-0N-tJq" secondAttribute="trailing" constant="-16" id="0ob-jU-oQF"/>
                             <constraint firstItem="W1I-Fu-Q3g" firstAttribute="leading" secondItem="tjv-7J-pjL" secondAttribute="leading" constant="69" id="HwS-G6-RYR"/>
                             <constraint firstItem="j4S-x8-aUb" firstAttribute="leading" secondItem="tjv-7J-pjL" secondAttribute="leading" constant="87" id="J1Z-dt-rjf"/>
                             <constraint firstItem="j4S-x8-aUb" firstAttribute="centerX" secondItem="b3H-Rl-xJr" secondAttribute="centerX" id="KUW-aL-hkr"/>
-                            <constraint firstItem="rb8-Fc-XqJ" firstAttribute="top" secondItem="W1I-Fu-Q3g" secondAttribute="bottom" constant="77" id="MgG-rG-3EX"/>
+                            <constraint firstItem="rb8-Fc-XqJ" firstAttribute="top" secondItem="W1I-Fu-Q3g" secondAttribute="bottom" constant="74" id="MgG-rG-3EX"/>
                             <constraint firstItem="j4S-x8-aUb" firstAttribute="top" secondItem="tjv-7J-pjL" secondAttribute="top" constant="-55" id="Tkh-uH-w2T"/>
-                            <constraint firstItem="rb8-Fc-XqJ" firstAttribute="leading" secondItem="tjv-7J-pjL" secondAttribute="leading" constant="107" id="b3T-KH-WVt"/>
+                            <constraint firstItem="rb8-Fc-XqJ" firstAttribute="leading" secondItem="tjv-7J-pjL" secondAttribute="leading" constant="74" id="b3T-KH-WVt"/>
                             <constraint firstItem="W1I-Fu-Q3g" firstAttribute="top" secondItem="j4S-x8-aUb" secondAttribute="bottom" constant="28" id="fKz-va-9hs"/>
-                            <constraint firstItem="tjv-7J-pjL" firstAttribute="bottom" secondItem="dcx-0N-tJq" secondAttribute="bottom" constant="336" id="g9u-sW-fCQ"/>
+                            <constraint firstItem="tjv-7J-pjL" firstAttribute="bottom" secondItem="dcx-0N-tJq" secondAttribute="bottom" constant="320" id="g9u-sW-fCQ"/>
                             <constraint firstItem="tjv-7J-pjL" firstAttribute="trailing" secondItem="W1I-Fu-Q3g" secondAttribute="trailing" constant="69" id="kEA-H1-LZF"/>
                             <constraint firstItem="rb8-Fc-XqJ" firstAttribute="centerX" secondItem="dcx-0N-tJq" secondAttribute="centerX" id="oi0-91-VCL"/>
-                            <constraint firstItem="dcx-0N-tJq" firstAttribute="top" secondItem="rb8-Fc-XqJ" secondAttribute="bottom" constant="63" id="rWe-iE-KHy"/>
+                            <constraint firstItem="dcx-0N-tJq" firstAttribute="top" secondItem="rb8-Fc-XqJ" secondAttribute="bottom" constant="39" id="rWe-iE-KHy"/>
                             <constraint firstItem="j4S-x8-aUb" firstAttribute="centerX" secondItem="rb8-Fc-XqJ" secondAttribute="centerX" id="uqA-EN-IBf"/>
                         </constraints>
                     </view>
@@ -222,19 +222,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-lI-euC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-lI-euC">
                                 <rect key="frame" x="10" y="112" width="394" height="714"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-
-                                        <mutableString key="content">"Alright, here goes. I'm old. What that means is that I've survived (so far) and a lot of people I've known and loved did not. I've lost friends, best friends, acquaintances, co-workers, grandparents, mom, relatives, teachers, mentors, students, neighbors, and a host of other folks. I have no children, and I can't imagine the pain it must be to lose a child. But here's my two cents. I wish I could say you get used to people dying. I never did. I don't want to. It tears a hole through me whenever somebody I love dies, no matter the circumstances.  But I don't want it to "not matter". I don't want it to be something that just passes. My scars are a testament to the love and the relationship that I had for and with that person. And if the scar is deep, so was the love. So be it. Scars are a testament to life. Scars are a testament that I can love deeply and live deeply and be cut, or even gouged, and that I can heal and continue to live and continue to love. And the scar tissue is stronger than the original flesh ever was. Scars are a testament to life. Scars are only ugly to people who can't see. As for grief, you'll find it comes in waves. When the ship is first wrecked, you're drowning, with wreckage all around you. Everything floating around you reminds you of the beauty and the magnificence of the ship that was, and is no more. And all you can do is float. You find some piece of the wreckage and you hang on for a while. Maybe it's some physical thing. Maybe it's a happy memory or a photograph. Maybe it's a person who is also floating. For a while, all you can do is float. Stay alive. In the beginning, the waves are 100 feet tall and crash over you without mercy. They come 10 seconds apart and don't even give you time to catch your breath. All you can do is hang on and float. After a while, maybe weeks, maybe months, you'll find the waves are still 100 feet tall, but they come further apart. When they come, they still crash all over you and wipe you out. But in between, you can breathe, you can function. You never know what's going to trigger the grief. It might be a song, a picture, a street intersection, the smell of a cup of coffee. It can be just about anything...and the wave comes crashing. But in between waves, there is life. Somewhere down the line, and it's different for everybody, you find that the waves are only 80 feet tall. Or 50 feet tall. And while they still come, they come further apart. You can see them coming. An anniversary, a birthday, or Christmas, or landing at O'Hare. You can see it coming, for the most part, and prepare yourself. And when it washes over you, you know that somehow you will, again, come out the other side. Soaking wet, sputtering, still hanging on to some tiny piece of the wreckage, but you'll come out. Take it from an old guy. The waves never stop coming, and somehow you don't really want them to. But you learn that you'll survive them. And other waves will come. And you'll survive them too. If you're lucky, you'll have lots of scars from lots of loves. And lots of shipwrecks."</mutableString>
+                                        <string key="content">"Alright, here goes. I'm old. What that means is that I've survived (so far) and a lot of people I've known and loved did not. I've lost friends, best friends, acquaintances, co-workers, grandparents, mom, relatives, teachers, mentors, students, neighbors, and a host of other folks. I have no children, and I can't imagine the pain it must be to lose a child. But here's my two cents. I wish I could say you get used to people dying. I never did. I don't want to. It tears a hole through me whenever somebody I love dies, no matter the circumstances.  But I don't want it to "not matter". I don't want it to be something that just passes. My scars are a testament to the love and the relationship that I had for and with that person. And if the scar is deep, so was the love. So be it. Scars are a testament to life. Scars are a testament that I can love deeply and live deeply and be cut, or even gouged, and that I can heal and continue to live and continue to love. And the scar tissue is stronger than the original flesh ever was. Scars are a testament to life. Scars are only ugly to people who can't see. As for grief, you'll find it comes in waves. When the ship is first wrecked, you're drowning, with wreckage all around you. Everything floating around you reminds you of the beauty and the magnificence of the ship that was, and is no more. And all you can do is float. You find some piece of the wreckage and you hang on for a while. Maybe it's some physical thing. Maybe it's a happy memory or a photograph. Maybe it's a person who is also floating. For a while, all you can do is float. Stay alive. In the beginning, the waves are 100 feet tall and crash over you without mercy. They come 10 seconds apart and don't even give you time to catch your breath. All you can do is hang on and float. After a while, maybe weeks, maybe months, you'll find the waves are still 100 feet tall, but they come further apart. When they come, they still crash all over you and wipe you out. But in between, you can breathe, you can function. You never know what's going to trigger the grief. It might be a song, a picture, a street intersection, the smell of a cup of coffee. It can be just about anything...and the wave comes crashing. But in between waves, there is life. Somewhere down the line, and it's different for everybody, you find that the waves are only 80 feet tall. Or 50 feet tall. And while they still come, they come further apart. You can see them coming. An anniversary, a birthday, or Christmas, or landing at O'Hare. You can see it coming, for the most part, and prepare yourself. And when it washes over you, you know that somehow you will, again, come out the other side. Soaking wet, sputtering, still hanging on to some tiny piece of the wreckage, but you'll come out. Take it from an old guy. The waves never stop coming, and somehow you don't really want them to. But you learn that you'll survive them. And other waves will come. And you'll survive them too. If you're lucky, you'll have lots of scars from lots of loves. And lots of shipwrecks" - by "GSnow" on reddit.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" metaFont="system" size="22"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacingBefore="5" headIndent="10" tighteningFactorForTruncation="0.0"/>
-
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -243,6 +240,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EPI-zz-xkt"/>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EPI-zz-xkt" firstAttribute="bottom" secondItem="9Ne-lI-euC" secondAttribute="bottom" constant="36" id="7cB-fF-3Gt"/>
+                            <constraint firstItem="9Ne-lI-euC" firstAttribute="centerX" secondItem="Gee-lH-kNT" secondAttribute="centerX" id="awG-6c-7dN"/>
+                            <constraint firstItem="9Ne-lI-euC" firstAttribute="top" secondItem="Gee-lH-kNT" secondAttribute="top" constant="112" id="ja4-4p-080"/>
+                            <constraint firstItem="9Ne-lI-euC" firstAttribute="leading" secondItem="EPI-zz-xkt" secondAttribute="leading" constant="10" id="r6L-3v-MAN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TdW-Ar-xoj"/>
                 </viewController>
@@ -258,31 +261,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvN-he-702">
-                                <rect key="frame" x="99" y="263" width="216" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvN-he-702">
+                                <rect key="frame" x="46" y="304" width="295" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="8Kr-ku-2ww"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAVELENGTH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJB-Rj-8dH">
-                                <rect key="frame" x="159.5" y="322" width="95" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAVELENGTH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJB-Rj-8dH">
+                                <rect key="frame" x="7.5" y="368" width="120.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="bvp-kO-goA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" red="0.45524730672380059" green="0.6704211221694798" blue="0.74052007090738636" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-0i-Oo8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-0i-Oo8">
                                 <rect key="frame" x="43" y="521" width="331" height="310"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTJ-Td-nRB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTJ-Td-nRB">
                                 <rect key="frame" x="51" y="419" width="323" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="gc5-Oz-xVV"/>
@@ -291,15 +294,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rf-d1-9FX">
-                                <rect key="frame" x="285" y="733" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-A1-i1x">
+                                <rect key="frame" x="43" y="384" width="374.5" height="27"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" red="0.45524730670000002" green="0.67042112220000005" blue="0.74052007090000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-A1-i1x">
-                                <rect key="frame" x="285" y="666" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CITY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-Uy-HXx">
+                                <rect key="frame" x="43" y="339" width="374" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -307,20 +310,23 @@
                         <viewLayoutGuide key="safeArea" id="LiF-7g-JFf"/>
                         <color key="backgroundColor" red="0.95980650190000005" green="0.96267610790000002" blue="0.87057477240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-
-                            <constraint firstItem="iJB-Rj-8dH" firstAttribute="top" secondItem="hvN-he-702" secondAttribute="bottom" constant="16" id="4mH-Lo-YFg"/>
-                            <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="iJB-Rj-8dH" secondAttribute="centerX" id="7WA-5l-GiU"/>
+                            <constraint firstItem="iJB-Rj-8dH" firstAttribute="top" secondItem="hvN-he-702" secondAttribute="bottom" constant="21" id="4mH-Lo-YFg"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="iJB-Rj-8dH" secondAttribute="centerX" constant="125.75" id="7WA-5l-GiU"/>
+                            <constraint firstItem="pgd-Uy-HXx" firstAttribute="top" secondItem="LiF-7g-JFf" secondAttribute="top" constant="199" id="7ht-9B-ghf"/>
                             <constraint firstItem="Pzb-0i-Oo8" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="43" id="Dhj-YW-zS2"/>
-                            <constraint firstItem="hvN-he-702" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="99" id="MUN-Bb-FXo"/>
+                            <constraint firstItem="JdN-A1-i1x" firstAttribute="leading" secondItem="IKp-jk-ucA" secondAttribute="leadingMargin" constant="23" id="DpY-9x-xnc"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="46" id="MUN-Bb-FXo"/>
                             <constraint firstItem="lTJ-Td-nRB" firstAttribute="trailing" secondItem="Pzb-0i-Oo8" secondAttribute="trailing" id="Nw5-rH-FsW"/>
-                            <constraint firstItem="hvN-he-702" firstAttribute="top" secondItem="LiF-7g-JFf" secondAttribute="top" constant="123" id="QDy-7v-d72"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="top" secondItem="LiF-7g-JFf" secondAttribute="top" constant="164" id="QDy-7v-d72"/>
                             <constraint firstItem="Pzb-0i-Oo8" firstAttribute="top" secondItem="lTJ-Td-nRB" secondAttribute="bottom" constant="8" id="Rty-rN-UPv"/>
-                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="top" secondItem="iJB-Rj-8dH" secondAttribute="bottom" constant="76" id="cVe-0q-z1H"/>
+                            <constraint firstItem="pgd-Uy-HXx" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="43" id="YQg-Uh-4dd"/>
+                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="top" secondItem="iJB-Rj-8dH" secondAttribute="bottom" constant="30" id="cVe-0q-z1H"/>
                             <constraint firstItem="lTJ-Td-nRB" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="51" id="gfH-us-o7v"/>
                             <constraint firstItem="LiF-7g-JFf" firstAttribute="bottom" secondItem="Pzb-0i-Oo8" secondAttribute="bottom" constant="31" id="ipE-xK-5RJ"/>
-                            <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" id="kMv-st-wUC"/>
+                            <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" constant="-13.5" id="kMv-st-wUC"/>
+                            <constraint firstItem="lTJ-Td-nRB" firstAttribute="top" secondItem="JdN-A1-i1x" secondAttribute="bottom" constant="8" id="lqh-yh-7VZ"/>
+                            <constraint firstItem="JdN-A1-i1x" firstAttribute="centerX" secondItem="iJB-Rj-8dH" secondAttribute="centerX" constant="162.5" id="naZ-f8-M4S"/>
                             <constraint firstItem="LiF-7g-JFf" firstAttribute="trailing" secondItem="lTJ-Td-nRB" secondAttribute="trailing" constant="40" id="ng1-dJ-qU1"/>
-
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bot-X8-C2X"/>
@@ -329,8 +335,8 @@
                         <outlet property="Description1" destination="Pzb-0i-Oo8" id="cIL-Mn-DI0"/>
                         <outlet property="Title1" destination="lTJ-Td-nRB" id="Ndm-m8-8QN"/>
                         <outlet property="Wavelength" destination="iJB-Rj-8dH" id="MPx-fU-RMR"/>
-                        <outlet property="moodCity1" destination="8rf-d1-9FX" id="wpO-JZ-ZRc"/>
-                        <outlet property="moodWeather1" destination="JdN-A1-i1x" id="9WJ-es-y4a"/>
+                        <outlet property="moodCity1" destination="pgd-Uy-HXx" id="nCm-Iu-I2U"/>
+                        <outlet property="moodWeather1" destination="JdN-A1-i1x" id="DQu-TX-Hqu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0s-hz-80c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -566,16 +572,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0s-qc-diC">
-                                <rect key="frame" x="152" y="814" width="128" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Delete">
-                                    <color key="titleColor" red="0.27792945499999999" green="0.64500951770000003" blue="0.72550660369999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="DeleteNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V5g-Hk-swd"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lvu-R3-vUO">
                                 <rect key="frame" x="52" y="243" width="310.5" height="271"/>
                                 <color key="backgroundColor" red="0.96848052740000001" green="0.91723498660000002" blue="0.84269406000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -586,38 +582,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your wavelength today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWX-kp-Zab">
-                                <rect key="frame" x="88" y="567" width="256" height="21"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKu-MH-QUm">
+                                <rect key="frame" x="0.0" y="603" width="414.5" height="162"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="yvl-zC-CyM"/>
+                                    <constraint firstAttribute="height" constant="162" id="sTZ-RD-A2w"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your wavelength today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWX-kp-Zab">
+                                <rect key="frame" x="55" y="558" width="311" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="yvl-zC-CyM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKu-MH-QUm">
-                                <rect key="frame" x="0.0" y="591" width="432" height="162"/>
-                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94509803921568625" green="0.80392156862745101" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Lvu-R3-vUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="1ri-qk-uGN"/>
                             <constraint firstItem="cyW-2z-u83" firstAttribute="centerX" secondItem="Lvu-R3-vUO" secondAttribute="centerX" id="75Z-Qe-Ux8"/>
-                            <constraint firstItem="KKu-MH-QUm" firstAttribute="centerX" secondItem="z0s-qc-diC" secondAttribute="centerX" id="GzN-YI-AB7"/>
+                            <constraint firstItem="Lvu-R3-vUO" firstAttribute="top" secondItem="cyW-2z-u83" secondAttribute="bottom" constant="25" id="F2Y-h6-yPE"/>
                             <constraint firstItem="cyW-2z-u83" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="JXk-zf-KcO"/>
-                            <constraint firstItem="z0s-qc-diC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="K7b-Tl-da0"/>
                             <constraint firstItem="KKu-MH-QUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ngy-lY-E6e"/>
-                            <constraint firstItem="KKu-MH-QUm" firstAttribute="top" secondItem="IWX-kp-Zab" secondAttribute="bottom" constant="3" id="XsC-n6-XPF"/>
-                            <constraint firstItem="z0s-qc-diC" firstAttribute="top" secondItem="Lvu-R3-vUO" secondAttribute="bottom" constant="300" id="gnN-Uc-Hnt"/>
+                            <constraint firstItem="Lvu-R3-vUO" firstAttribute="centerX" secondItem="IWX-kp-Zab" secondAttribute="centerX" constant="-3.25" id="Taz-eg-seA"/>
+                            <constraint firstItem="KKu-MH-QUm" firstAttribute="top" secondItem="IWX-kp-Zab" secondAttribute="bottom" constant="-6" id="XsC-n6-XPF"/>
                             <constraint firstItem="Lvu-R3-vUO" firstAttribute="leading" secondItem="cyW-2z-u83" secondAttribute="leading" id="hk7-2L-aNZ"/>
-                            <constraint firstItem="z0s-qc-diC" firstAttribute="top" secondItem="KKu-MH-QUm" secondAttribute="bottom" constant="61" id="hxo-AZ-uSH"/>
                             <constraint firstItem="cyW-2z-u83" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="jXD-FE-Uk6"/>
-                            <constraint firstItem="IWX-kp-Zab" firstAttribute="centerX" secondItem="KKu-MH-QUm" secondAttribute="centerX" id="lsD-oD-c7m"/>
-                            <constraint firstItem="IWX-kp-Zab" firstAttribute="top" secondItem="Lvu-R3-vUO" secondAttribute="bottom" constant="53" id="rT5-RY-zbd"/>
-                            <constraint firstItem="z0s-qc-diC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="t8Z-kl-AUE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z0s-qc-diC" secondAttribute="trailing" constant="134" id="wHB-4u-UDo"/>
-                            <constraint firstItem="IWX-kp-Zab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="yr4-aN-dhC"/>
+                            <constraint firstItem="IWX-kp-Zab" firstAttribute="centerX" secondItem="KKu-MH-QUm" secondAttribute="centerX" constant="3.25" id="lsD-oD-c7m"/>
+                            <constraint firstItem="IWX-kp-Zab" firstAttribute="top" secondItem="Lvu-R3-vUO" secondAttribute="bottom" constant="44" id="rT5-RY-zbd"/>
+                            <constraint firstItem="IWX-kp-Zab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="yr4-aN-dhC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yLh-pT-4cO">
@@ -1010,7 +1005,7 @@
         <scene sceneID="oBA-bg-bQQ">
             <objects>
                 <viewController storyboardIdentifier="ThreeFTVC" id="h6X-99-sb2" customClass="ThreeFTVC" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="qJ5-0M-H12">
+                    <view key="view" contentMode="scaleToFill" id="qJ5-0M-H12">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1021,7 +1016,7 @@
                                     <constraint firstAttribute="height" constant="310" id="uIn-UM-dB6"/>
                                 </constraints>
                                 <string key="text">The waves never stop coming, and somehow you don't really want them to. But you learn that you'll survive them. And other waves will come. And you'll survive them too. If you're lucky, you'll have lots of scars from lots of loves. And lots of shipwrecks.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

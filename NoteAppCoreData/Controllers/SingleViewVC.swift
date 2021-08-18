@@ -20,8 +20,10 @@ class SingleViewVC: UIViewController {
     @IBOutlet weak var Date1: UILabel!
     @IBOutlet weak var Wavelength: UILabel!
     
-    @IBOutlet weak var moodCity1: UILabel!
+   
+    
     @IBOutlet weak var moodWeather1: UILabel!
+    @IBOutlet weak var moodCity1: UILabel!
     
     var selectedJournal : Note!
     
@@ -51,7 +53,7 @@ class SingleViewVC: UIViewController {
         animationView.play()
         animationView.loopMode = .loop
         //bigger y, lower the image
-        animationView.frame = CGRect(x: 0, y: 46, width: 414, height: 220)
+        animationView.frame = CGRect(x: 0, y: 46, width: 414, height: 330)
         //animationView.center = view.topAnchor
 
   
