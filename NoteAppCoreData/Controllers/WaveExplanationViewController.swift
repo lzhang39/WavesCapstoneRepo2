@@ -8,6 +8,10 @@
 import UIKit
 
 class WaveExplanationViewController: UIViewController {
+    @IBOutlet weak var QuoteButton: UIButton!
+    
+    @IBOutlet weak var LinkButton: UIButton!
+    //    @IBOutlet weak var LinkButton: UIButton!
     
     @IBAction func LinkButton(_ sender: Any) {
         if let url = URL(string: "https://www.thedinnerparty.org/") {
@@ -19,7 +23,8 @@ class WaveExplanationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        QuoteButton.layer.cornerRadius = 25.0
+        LinkButton.layer.cornerRadius = 25.0
 
         // Do any additional setup after loading the view.
     }

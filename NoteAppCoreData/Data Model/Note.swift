@@ -9,4 +9,7 @@ class Note: NSManagedObject
 	@NSManaged var deletedDate: Date?
     
     @NSManaged var wavelength: String!
+    
+    @NSManaged var moodCity: String!
+    @NSManaged var moodWeather: String!
 }
