@@ -10,6 +10,12 @@ import Charts
 import TinyConstraints
 import CoreData
 
+
+var selectedJournal : Note!
+var one = selectedJournal.id
+var two = selectedJournal.wavelength
+
+
 class GraphViewController: UIViewController, ChartViewDelegate {
     
     lazy var lineChartView: LineChartView = {
@@ -68,12 +74,24 @@ class GraphViewController: UIViewController, ChartViewDelegate {
         lineChartView.data = data
     }
     
-    
+
     //x - days, y - Wavelength
     //
-  
+
+    
+//    let numbers = [7, 8, 9, 10]
+//    let array: [(Int, Int)] = numbers.enumerated().map { ($0, $1) }
+
+
+//    let yValues: [ChartDataEntry] = noteList.enumerated().map{(one,two) -> ChartDataEntry in
+//        return "x:\(one), y:\(two)"
+//    }
+
+    
+    //all journal entries
+    //allEntries.enumerate().map { ...}
     let yValues: [ChartDataEntry] = [
-        
+
         //SCROLLING feature for large datasets
         ChartDataEntry(x: 1.0, y: 10.0),
         ChartDataEntry(x: 2.0, y: 25.0),
@@ -81,7 +99,7 @@ class GraphViewController: UIViewController, ChartViewDelegate {
         ChartDataEntry(x: 4.0, y: 50.0),
         ChartDataEntry(x: 5.0, y: 0.0),
         ChartDataEntry(x: 6.0, y: 15.0),
-        
+
         ChartDataEntry(x: 7.0, y: 15.0),
         ChartDataEntry(x: 8.0, y: 15.0),
         ChartDataEntry(x: 9.0, y: 15.0),
@@ -92,7 +110,7 @@ class GraphViewController: UIViewController, ChartViewDelegate {
         ChartDataEntry(x: 13.0, y: 15.0),
         ChartDataEntry(x: 14.0, y: 15.0),
         ChartDataEntry(x: 15.0, y: 8.0),
-        
+
         ChartDataEntry(x: 16.0, y: 15.0),
         ChartDataEntry(x: 17.0, y: 15.0),
         ChartDataEntry(x: 18.0, y: 15.0),
@@ -130,7 +148,8 @@ class GraphViewController: UIViewController, ChartViewDelegate {
 //        set {
 //            selectedJournal.text = "\(newValue)"
 //        }
+//
     
-    
+
 
 

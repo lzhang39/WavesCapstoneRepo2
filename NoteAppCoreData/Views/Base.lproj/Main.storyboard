@@ -74,13 +74,6 @@
                                     <constraint firstAttribute="height" constant="128" id="GZE-tb-ZiC"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aC-aO-r9b">
-                                <rect key="frame" x="159" y="689" width="96" height="30"/>
-                                <state key="normal" title="History Graph"/>
-                                <connections>
-                                    <segue destination="XYo-Ch-3yT" kind="show" id="gWz-MW-9A7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f6k-eK-uHw"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.91764705882352937" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -89,13 +82,11 @@
                             <constraint firstItem="FJW-k2-Tpv" firstAttribute="centerX" secondItem="q2v-hP-8So" secondAttribute="centerX" constant="-6" id="9wc-wx-tYk"/>
                             <constraint firstItem="xhO-6x-vEK" firstAttribute="leading" secondItem="pHo-fR-rPZ" secondAttribute="leading" constant="234" id="C9O-37-suP"/>
                             <constraint firstItem="Qbj-1u-9eX" firstAttribute="top" secondItem="nUJ-7J-SS3" secondAttribute="bottom" constant="65" id="CYi-pl-SBv"/>
-                            <constraint firstItem="2aC-aO-r9b" firstAttribute="centerX" secondItem="pHo-fR-rPZ" secondAttribute="centerX" id="DFH-7j-Yl0"/>
                             <constraint firstItem="f6k-eK-uHw" firstAttribute="trailing" secondItem="FJW-k2-Tpv" secondAttribute="trailing" constant="98" id="Fo8-Ad-Wjj"/>
                             <constraint firstItem="FJW-k2-Tpv" firstAttribute="centerX" secondItem="u83-1l-mcc" secondAttribute="centerX" constant="-6" id="HOI-Gm-Aed"/>
                             <constraint firstItem="q2v-hP-8So" firstAttribute="leading" secondItem="f6k-eK-uHw" secondAttribute="leading" constant="72" id="LHs-wL-oGf"/>
                             <constraint firstItem="FJW-k2-Tpv" firstAttribute="top" secondItem="pHo-fR-rPZ" secondAttribute="top" constant="107" id="Lqy-f3-Tyh"/>
                             <constraint firstItem="FJW-k2-Tpv" firstAttribute="leading" secondItem="f6k-eK-uHw" secondAttribute="leading" constant="76" id="OiR-9F-gdZ"/>
-                            <constraint firstItem="2aC-aO-r9b" firstAttribute="top" secondItem="Qbj-1u-9eX" secondAttribute="bottom" constant="24" id="Qm6-v7-fhs"/>
                             <constraint firstItem="q2v-hP-8So" firstAttribute="top" secondItem="u83-1l-mcc" secondAttribute="bottom" constant="37" id="UeV-Es-IWC"/>
                             <constraint firstItem="FJW-k2-Tpv" firstAttribute="centerX" secondItem="nUJ-7J-SS3" secondAttribute="centerX" constant="-6" id="YSU-Lu-2hD"/>
                             <constraint firstItem="u83-1l-mcc" firstAttribute="top" secondItem="FJW-k2-Tpv" secondAttribute="bottom" constant="56" id="ZiD-ZL-da3"/>
@@ -105,7 +96,19 @@
                             <constraint firstItem="nUJ-7J-SS3" firstAttribute="top" secondItem="q2v-hP-8So" secondAttribute="bottom" constant="65" id="naK-yW-0Yb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Iqp-I0-jvN"/>
+                    <navigationItem key="navigationItem" id="Iqp-I0-jvN">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="MbE-nH-rJp">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2aC-aO-r9b">
+                                <rect key="frame" x="298" y="7" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="History Graph"/>
+                                <connections>
+                                    <segue destination="XYo-Ch-3yT" kind="show" id="gWz-MW-9A7"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="0.43325324375167673" green="0.80962577410000003" blue="0.71961973534032508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="journal" destination="q2v-hP-8So" id="RRT-cc-w6P"/>
                         <outlet property="resources" destination="nUJ-7J-SS3" id="wNc-xx-IRc"/>
@@ -130,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yqK-lV-WN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1420" y="710"/>
+            <point key="canvasLocation" x="829" y="1630"/>
         </scene>
         <!--Wave Explanation View Controller-->
         <scene sceneID="soR-3l-7AE">
@@ -453,7 +456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLw-S5-1Sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="811"/>
+            <point key="canvasLocation" x="829" y="676"/>
         </scene>
         <!--Note Table View-->
         <scene sceneID="Mj3-aQ-UEu">
