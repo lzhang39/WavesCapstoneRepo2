@@ -1,13 +1,9 @@
 import UIKit
 import CoreData
 
+
 // MUST TURN ON SIMULATE LOCATION WHENEVER TESTING under debug->
 import CoreLocation
- 
-
-//struct Temperature: Codable {
-//    let feels_like: Double
-//}
 
 // HOW DO WE DO SECRETS MGMT IN SWIFT/IOS ???
 //    enum Secrets {
@@ -15,17 +11,16 @@ import CoreLocation
 //    }
 
 
-
 class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CLLocationManagerDelegate {
     
-    // Make global variable
+    // Make global variables
     var waves:String = "select a wave"
-//    var lat:Double?
-//    var lon:Double?
+    //    var lat:Double?
+    //    var lon:Double?
     var globalName:String = ""
     var globalWeather:String = ""
     
-
+    
     //Title text Field
     @IBOutlet weak var titleTF: UITextField!
     //Description text Field
@@ -38,8 +33,8 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     override func viewDidLoad(){
         super.viewDidLoad()
-//        setupLocation()
-//        getData(from: url)
+        //        setupLocation()
+        //        getData(from: url)
         
         // Connect data:
         self.picker.delegate = self
@@ -53,16 +48,16 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     
-//     PRINTS LAT/LON IN THE CONSOLE (viewDidAppear calls every time we enter this screen)
+    //     PRINTS LAT/LON IN CONSOLE (viewDidAppear calls every time we enter this screen)
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupLocation()
     }
-        
+    
     // LOCATION PERMISSIONS for API CALL
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
-        
+    
     func setupLocation() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -81,7 +76,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
         let lon = currentLocation.coordinate.longitude
         let lat = currentLocation.coordinate.latitude
-//        print("\(lon) | \(lat)")
+        //        print("\(lon) | \(lat)")
         
         let url = "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
         
@@ -96,30 +91,29 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             
             // have data = JSON decoding !
             //Convert data using JSON decoder to models/some object to use
-        var result: Response?
-        do {
-            result = try JSONDecoder().decode(Response.self, from: data)
-        }
-        catch {
-            print("failed to convert \(error.localizedDescription)")
-        }
-        guard let json = result else {
-            return
-        }
-        
-        print(json.name)
-        print(json.weather[0].description)
+            var result: Response?
+            do {
+                result = try JSONDecoder().decode(Response.self, from: data)
+            }
+            catch {
+                print("failed to convert \(error.localizedDescription)")
+            }
+            guard let json = result else {
+                return
+            }
             
-        self.globalName = json.name
-        self.globalWeather = json.weather[0].description
+            print(json.name)
+            print(json.weather[0].description)
+            self.globalName = json.name
+            self.globalWeather = json.weather[0].description
             
         }).resume()
-//            lon = currentLocation.coordinate.longitude
-//            lat = currentLocation.coordinate.latitude
-       // USE LAT! unconditional unwrapping - lat is optional
-//           print("\(lon!) | \(lat!)")
+        //            lon = currentLocation.coordinate.longitude
+        //            lat = currentLocation.coordinate.latitude
+        // USE LAT! unconditional unwrapping - lat is optional
+        //           print("\(lon!) | \(lat!)")
     }
-   
+    
     
     
     // Number of columns of data
@@ -234,40 +228,45 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     
     //Deleting Note
-//    @IBAction func DeleteNote(_ sender: Any)
-//    {//core data persistent container
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-//        //fetching info from Note entity
-//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
-//        do {
-//            let results:NSArray = try context.fetch(request) as NSArray
-//            for result in results
-//            {//if note is slected, delete
-//                let note = result as! Note
-//                if(note == selectedNote)
-//                {
-//                    note.deletedDate = Date()
-//                    try context.save()
-//                    navigationController?.popViewController(animated: true) //pop up display
-//                }
-//            }
-//        }
-//        catch
-//        {
-//            print("Fetch Failed")
-//        }
-//    }
-//
+    //    @IBAction func DeleteNote(_ sender: Any)
+    //    {//core data persistent container
+    //        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    //        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+    //        //fetching info from Note entity
+    //        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+    //        do {
+    //            let results:NSArray = try context.fetch(request) as NSArray
+    //            for result in results
+    //            {//if note is slected, delete
+    //                let note = result as! Note
+    //                if(note == selectedNote)
+    //                {
+    //                    note.deletedDate = Date()
+    //                    try context.save()
+    //                    navigationController?.popViewController(animated: true) //pop up display
+    //                }
+    //            }
+    //        }
+    //        catch
+    //        {
+    //            print("Fetch Failed")
+    //        }
+    //    }
+    //
     
-}
-
+    }
+    
 struct Response: Codable {
     let weather: [Mood]
-//    let main: Temperature
+    //    let main: Temperature
     let name: String
 }
 struct Mood: Codable {
     let description: String
 }
 }
+
+//struct Temperature: Codable {
+//    let feels_like: Double
+//}
+
