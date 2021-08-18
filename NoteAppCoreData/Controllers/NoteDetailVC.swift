@@ -5,6 +5,23 @@ import CoreData
 import CoreLocation
  
 
+struct Response: Codable {
+    let weather: Mood
+    let main: Temperature
+}
+struct Mood: Codable {
+    let description: String
+}
+struct Temperature: Codable {
+    let feels_like: Double
+}
+
+// HOW DO WE DO SECRETS MGMT IN SWIFT/IOS ???
+//    enum Secrets {
+//        static let apiKey = "d21eeb7de3c2e905b2ad8af39cb4b53d"
+//    }
+
+
 
 class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CLLocationManagerDelegate {
     
@@ -58,6 +75,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     var pickerData = [["select a wave" ,"0 ft", "10 ft", "25 ft", "40 ft", "50 ft"]]
     
+    
     override func viewDidLoad(){
         super.viewDidLoad()
 //        setupLocation()
@@ -76,8 +94,46 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     // PRINTS LAT/LON IN THE CONSOLE
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        setupLocation()
+//        setupLocation()
+        
+        
+//        let url = "api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
+        let url = "api.openweathermap.org/data/2.5/weather?lat=40.712776&lon=-74.005974&appid=d21eeb7de3c2e905b2ad8af39cb4b53d"
+        getData(from: url)
+        
     }
+    
+    
+    private func getData(from url: String) {
+        // MAKE API REQUEST !!!
+        let task = URLSession.shared.dataTask(with: URL(string:url)!, completionHandler: { data, response, error in
+            //API Validation
+            guard let data = data, error == nil else {
+                print("something went wrong")
+                return
+            }
+            // have data = JSON decoding !
+            //Convert data using JSON decoder to models/some object to use
+        var result: Response?
+        do {
+            result = try JSONDecoder().decode(Response.self, from: data)
+        }
+        catch {
+            print("failed to convert \(error.localizedDescription)")
+        }
+        guard let json = result else {
+            return
+        }
+
+        print(json.weather.description)
+        print(json.main.feels_like)
+        })
+
+        task.resume()
+
+    }
+    
+    
     
     
     
@@ -162,7 +218,6 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
         
     }
-    
     
     
     //if selected note is not empty
