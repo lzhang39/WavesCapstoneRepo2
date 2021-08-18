@@ -228,11 +228,13 @@
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.91764705879999997" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
                                     <fragment>
+
                                         <mutableString key="content">"Alright, here goes. I'm old. What that means is that I've survived (so far) and a lot of people I've known and loved did not. I've lost friends, best friends, acquaintances, co-workers, grandparents, mom, relatives, teachers, mentors, students, neighbors, and a host of other folks. I have no children, and I can't imagine the pain it must be to lose a child. But here's my two cents. I wish I could say you get used to people dying. I never did. I don't want to. It tears a hole through me whenever somebody I love dies, no matter the circumstances.  But I don't want it to "not matter". I don't want it to be something that just passes. My scars are a testament to the love and the relationship that I had for and with that person. And if the scar is deep, so was the love. So be it. Scars are a testament to life. Scars are a testament that I can love deeply and live deeply and be cut, or even gouged, and that I can heal and continue to live and continue to love. And the scar tissue is stronger than the original flesh ever was. Scars are a testament to life. Scars are only ugly to people who can't see. As for grief, you'll find it comes in waves. When the ship is first wrecked, you're drowning, with wreckage all around you. Everything floating around you reminds you of the beauty and the magnificence of the ship that was, and is no more. And all you can do is float. You find some piece of the wreckage and you hang on for a while. Maybe it's some physical thing. Maybe it's a happy memory or a photograph. Maybe it's a person who is also floating. For a while, all you can do is float. Stay alive. In the beginning, the waves are 100 feet tall and crash over you without mercy. They come 10 seconds apart and don't even give you time to catch your breath. All you can do is hang on and float. After a while, maybe weeks, maybe months, you'll find the waves are still 100 feet tall, but they come further apart. When they come, they still crash all over you and wipe you out. But in between, you can breathe, you can function. You never know what's going to trigger the grief. It might be a song, a picture, a street intersection, the smell of a cup of coffee. It can be just about anything...and the wave comes crashing. But in between waves, there is life. Somewhere down the line, and it's different for everybody, you find that the waves are only 80 feet tall. Or 50 feet tall. And while they still come, they come further apart. You can see them coming. An anniversary, a birthday, or Christmas, or landing at O'Hare. You can see it coming, for the most part, and prepare yourself. And when it washes over you, you know that somehow you will, again, come out the other side. Soaking wet, sputtering, still hanging on to some tiny piece of the wreckage, but you'll come out. Take it from an old guy. The waves never stop coming, and somehow you don't really want them to. But you learn that you'll survive them. And other waves will come. And you'll survive them too. If you're lucky, you'll have lots of scars from lots of loves. And lots of shipwrecks."</mutableString>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" metaFont="system" size="22"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacingBefore="5" headIndent="10" tighteningFactorForTruncation="0.0"/>
+
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -289,10 +291,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rf-d1-9FX">
+                                <rect key="frame" x="285" y="733" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-A1-i1x">
+                                <rect key="frame" x="285" y="666" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LiF-7g-JFf"/>
                         <color key="backgroundColor" red="0.95980650190000005" green="0.96267610790000002" blue="0.87057477240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+
                             <constraint firstItem="iJB-Rj-8dH" firstAttribute="top" secondItem="hvN-he-702" secondAttribute="bottom" constant="16" id="4mH-Lo-YFg"/>
                             <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="iJB-Rj-8dH" secondAttribute="centerX" id="7WA-5l-GiU"/>
                             <constraint firstItem="Pzb-0i-Oo8" firstAttribute="leading" secondItem="LiF-7g-JFf" secondAttribute="leading" constant="43" id="Dhj-YW-zS2"/>
@@ -305,6 +320,7 @@
                             <constraint firstItem="LiF-7g-JFf" firstAttribute="bottom" secondItem="Pzb-0i-Oo8" secondAttribute="bottom" constant="31" id="ipE-xK-5RJ"/>
                             <constraint firstItem="hvN-he-702" firstAttribute="centerX" secondItem="IKp-jk-ucA" secondAttribute="centerX" id="kMv-st-wUC"/>
                             <constraint firstItem="LiF-7g-JFf" firstAttribute="trailing" secondItem="lTJ-Td-nRB" secondAttribute="trailing" constant="40" id="ng1-dJ-qU1"/>
+
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bot-X8-C2X"/>
@@ -313,6 +329,8 @@
                         <outlet property="Description1" destination="Pzb-0i-Oo8" id="cIL-Mn-DI0"/>
                         <outlet property="Title1" destination="lTJ-Td-nRB" id="Ndm-m8-8QN"/>
                         <outlet property="Wavelength" destination="iJB-Rj-8dH" id="MPx-fU-RMR"/>
+                        <outlet property="moodCity1" destination="8rf-d1-9FX" id="wpO-JZ-ZRc"/>
+                        <outlet property="moodWeather1" destination="JdN-A1-i1x" id="9WJ-es-y4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0s-hz-80c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
