@@ -10,11 +10,13 @@ import Charts
 import TinyConstraints
 import CoreData
 
+import Lottie
+
+
 
 var selectedJournal : Note!
-var one = selectedJournal.id
-var two = selectedJournal.wavelength
-
+//var one = selectedJournal.id
+//var two = selectedJournal.wavelength
 
 class GraphViewController: UIViewController, ChartViewDelegate {
     
@@ -40,8 +42,6 @@ class GraphViewController: UIViewController, ChartViewDelegate {
         
         chartView.animate(xAxisDuration: 2.5)
         
-        
-        
         return chartView
     }()
     
@@ -55,14 +55,32 @@ class GraphViewController: UIViewController, ChartViewDelegate {
         lineChartView.heightToWidth(of: view)
         
         setData()
+        lottieAnimation()
 
+    }
+    func lottieAnimation(){
+        let animationView = AnimationView(name: "68988-boating")
+        animationView.contentMode = .scaleAspectFit
+        view.addSubview(animationView)
+        animationView.play()
+        animationView.loopMode = .loop
+        //bigger y, lower the image
+        animationView.frame = CGRect(x: -130, y: 545, width: 600, height: 400)
+//        animationView.center = view.center
     }
     
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
         print(entry)
     }
-    
     func setData() {
+        
+//        print("******************************************************************")
+//        print(notesLists)
+//        print("******************************************************************")
+//        let yValues: [ChartDataEntry] = Global.nots.enumerated().map{(index,note) -> ChartDataEntry in
+//            return ChartDataEntry(x:Double(index+1), y:Double(note.wavelength)!)
+//        }
+        
         let set1 = LineChartDataSet(entries: yValues, label: "Entries")
         set1.mode = .cubicBezier
         
@@ -74,56 +92,47 @@ class GraphViewController: UIViewController, ChartViewDelegate {
         lineChartView.data = data
     }
     
+    
 
+    
+    
     //x - days, y - Wavelength
     //
-
+    
     
 //    let numbers = [7, 8, 9, 10]
 //    let array: [(Int, Int)] = numbers.enumerated().map { ($0, $1) }
+    
 
-
-//    let yValues: [ChartDataEntry] = noteList.enumerated().map{(one,two) -> ChartDataEntry in
-//        return "x:\(one), y:\(two)"
+//    let yValues: [ChartDataEntry] = noteList.enumerated().map{(index,note) -> ChartDataEntry in
+//        return ChartDataEntry(x:Double(index+1), y:Double(note.wavelength)!)
 //    }
-
+    
     
     //all journal entries
+    //        SCROLLING feature for large datasets
+    
     //allEntries.enumerate().map { ...}
+    
+    
     let yValues: [ChartDataEntry] = [
-
-        //SCROLLING feature for large datasets
-        ChartDataEntry(x: 1.0, y: 10.0),
+        ChartDataEntry(x: 1.0, y: 40.0),
         ChartDataEntry(x: 2.0, y: 25.0),
         ChartDataEntry(x: 3.0, y: 0.0),
         ChartDataEntry(x: 4.0, y: 50.0),
         ChartDataEntry(x: 5.0, y: 0.0),
-        ChartDataEntry(x: 6.0, y: 15.0),
+        ChartDataEntry(x: 6.0, y: 40.0),
 
-        ChartDataEntry(x: 7.0, y: 15.0),
-        ChartDataEntry(x: 8.0, y: 15.0),
-        ChartDataEntry(x: 9.0, y: 15.0),
-        ChartDataEntry(x: 9.0, y: 15.0),
-        ChartDataEntry(x: 10.0, y: 15.0),
-        ChartDataEntry(x: 11.0, y: 15.0),
-        ChartDataEntry(x: 12.0, y: 15.0),
-        ChartDataEntry(x: 13.0, y: 15.0),
-        ChartDataEntry(x: 14.0, y: 15.0),
-        ChartDataEntry(x: 15.0, y: 8.0),
-
-        ChartDataEntry(x: 16.0, y: 15.0),
-        ChartDataEntry(x: 17.0, y: 15.0),
-        ChartDataEntry(x: 18.0, y: 15.0),
-        ChartDataEntry(x: 19.0, y: 15.0),
-        ChartDataEntry(x: 20.0, y: 15.0),
-        ChartDataEntry(x: 21.0, y: 15.0),
-        ChartDataEntry(x: 22.0, y: 15.0),
-        ChartDataEntry(x: 23.0, y: 15.0),
-        ChartDataEntry(x: 24.0, y: 15.0),
-        ChartDataEntry(x: 25.0, y: 8.0)
+        ChartDataEntry(x: 7.0, y: 10.0),
+        ChartDataEntry(x: 8.0, y: 10.0),
+        ChartDataEntry(x: 9.0, y: 50.0),
+        ChartDataEntry(x: 9.0, y: 50.0),
+        ChartDataEntry(x: 10.0, y: 0.0),
 
     ]
 }
+
+
 
 
 
@@ -150,6 +159,4 @@ class GraphViewController: UIViewController, ChartViewDelegate {
 //        }
 //
     
-
-
 

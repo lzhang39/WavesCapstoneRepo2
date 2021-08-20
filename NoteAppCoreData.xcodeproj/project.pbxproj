@@ -28,6 +28,13 @@
 		3E01B5D326CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3E01B5D126CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 */; };
 		3E01B5D726CA2D5800D8D79F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01B5D626CA2D5800D8D79F /* UIViewController+Extension.swift */; };
 		3E01B5D926CA2EBD00D8D79F /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01B5D826CA2EBD00D8D79F /* UserDefaults+Extension.swift */; };
+		3EA20EC026CF6666008B2A3C /* HD-wallpaper-wilson-beach-cast-away-chilling-lighthouse-tom-hanks-volleyball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA20EBF26CF6666008B2A3C /* HD-wallpaper-wilson-beach-cast-away-chilling-lighthouse-tom-hanks-volleyball.jpg */; };
+		3EA20EC226CF683D008B2A3C /* MWtzbtpHLT-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA20EC126CF683D008B2A3C /* MWtzbtpHLT-4.png */; };
+		3EA20EC426CF70AB008B2A3C /* 68988-boating.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EA20EC326CF70AB008B2A3C /* 68988-boating.json */; };
+		3EA20EC626CFEFC6008B2A3C /* lf30_editor_pgwz1u0d.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EA20EC526CFEFC6008B2A3C /* lf30_editor_pgwz1u0d.json */; };
+		3EA20EC926D003A0008B2A3C /* IMG_4178.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA20EC826D003A0008B2A3C /* IMG_4178.jpg */; };
+		3EA20ECB26D003A5008B2A3C /* IMG_4177.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA20ECA26D003A5008B2A3C /* IMG_4177.jpg */; };
+		3EA20ECD26D003A8008B2A3C /* IMG_4176.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EA20ECC26D003A8008B2A3C /* IMG_4176.jpg */; };
 		3EF77F8426C35094008884B9 /* SingleViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF77F8326C35094008884B9 /* SingleViewVC.swift */; };
 		4B23E35F519145D051F5C22C /* Pods_NoteAppCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F6A6FE398A3832A37C0353 /* Pods_NoteAppCoreData.framework */; };
 		6015370E26C5E4E20052CD40 /* FourFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6015370D26C5E4E20052CD40 /* FourFTVC.swift */; };
@@ -82,6 +89,13 @@
 		3E01B5D126CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ocean-waves-crashing-sound.mp3"; sourceTree = "<group>"; };
 		3E01B5D626CA2D5800D8D79F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3E01B5D826CA2EBD00D8D79F /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		3EA20EBF26CF6666008B2A3C /* HD-wallpaper-wilson-beach-cast-away-chilling-lighthouse-tom-hanks-volleyball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "HD-wallpaper-wilson-beach-cast-away-chilling-lighthouse-tom-hanks-volleyball.jpg"; sourceTree = "<group>"; };
+		3EA20EC126CF683D008B2A3C /* MWtzbtpHLT-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MWtzbtpHLT-4.png"; sourceTree = "<group>"; };
+		3EA20EC326CF70AB008B2A3C /* 68988-boating.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "68988-boating.json"; sourceTree = "<group>"; };
+		3EA20EC526CFEFC6008B2A3C /* lf30_editor_pgwz1u0d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_pgwz1u0d.json; sourceTree = "<group>"; };
+		3EA20EC826D003A0008B2A3C /* IMG_4178.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4178.jpg; sourceTree = "<group>"; };
+		3EA20ECA26D003A5008B2A3C /* IMG_4177.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4177.jpg; sourceTree = "<group>"; };
+		3EA20ECC26D003A8008B2A3C /* IMG_4176.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4176.jpg; sourceTree = "<group>"; };
 		3EF77F8326C35094008884B9 /* SingleViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewVC.swift; sourceTree = "<group>"; };
 		6015370D26C5E4E20052CD40 /* FourFTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourFTVC.swift; sourceTree = "<group>"; };
 		607369C126C178BC00E14ADF /* wave-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wave-loader.json"; sourceTree = "<group>"; };
@@ -127,11 +141,10 @@
 		2E37153A25C0FB980037351E = {
 			isa = PBXGroup;
 			children = (
+				3EA20EC726CFF0E3008B2A3C /* Onboarding Pics */,
 				3E01B5D126CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 */,
-				60DE739926CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json */,
-				60DE739D26CCA846009FF12A /* 69971-sea-view.json */,
 				3E01B5D026CA1AFD00D8D79F /* seagull-beach-sound-effect.mp3 */,
-				607369C126C178BC00E14ADF /* wave-loader.json */,
+				3EA20EC526CFEFC6008B2A3C /* lf30_editor_pgwz1u0d.json */,
 				3E01B5BB26C9FB0000D8D79F /* Lottie Animations */,
 				2E37154525C0FB980037351E /* NoteAppCoreData */,
 				2E37154425C0FB980037351E /* Products */,
@@ -168,12 +181,28 @@
 				3E01B5C626CA01FF00D8D79F /* lf30_editor_5djw8wh3.json */,
 				3E01B5BE26C9FB1900D8D79F /* lf30_editor_8etkzbiu.json */,
 				3E01B5BC26C9FB1800D8D79F /* lf30_editor_en1mplb5.json */,
+				607369C126C178BC00E14ADF /* wave-loader.json */,
+				60DE739926CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json */,
+				3EA20EC326CF70AB008B2A3C /* 68988-boating.json */,
 				3E01B5CE26CA0EC100D8D79F /* lf30_editor_oosc6awj.json */,
+				60DE739D26CCA846009FF12A /* 69971-sea-view.json */,
 				3E01B5CA26CA084200D8D79F /* paperboats.json */,
 				3E01B5C826CA083D00D8D79F /* over-the-sea.json */,
 				3E01B5BD26C9FB1900D8D79F /* lf30_editor_vkadnukw.json */,
 			);
 			path = "Lottie Animations";
+			sourceTree = "<group>";
+		};
+		3EA20EC726CFF0E3008B2A3C /* Onboarding Pics */ = {
+			isa = PBXGroup;
+			children = (
+				3EA20EBF26CF6666008B2A3C /* HD-wallpaper-wilson-beach-cast-away-chilling-lighthouse-tom-hanks-volleyball.jpg */,
+				3EA20EC126CF683D008B2A3C /* MWtzbtpHLT-4.png */,
+				3EA20ECA26D003A5008B2A3C /* IMG_4177.jpg */,
+				3EA20EC826D003A0008B2A3C /* IMG_4178.jpg */,
+				3EA20ECC26D003A8008B2A3C /* IMG_4176.jpg */,
+			);
+			path = "Onboarding Pics";
 			sourceTree = "<group>";
 		};
 		607F9F3326BF07C300EFB172 /* Controllers */ = {
@@ -384,17 +413,24 @@
 			files = (
 				3E01B5C726CA020000D8D79F /* lf30_editor_5djw8wh3.json in Resources */,
 				3E01B5C126C9FB1A00D8D79F /* lf30_editor_en1mplb5.json in Resources */,
+				3EA20EC426CF70AB008B2A3C /* 68988-boating.json in Resources */,
+				3EA20EC026CF6666008B2A3C /* HD-wallpaper-wilson-beach-cast-away-chilling-lighthouse-tom-hanks-volleyball.jpg in Resources */,
 				3E01B5C926CA083D00D8D79F /* over-the-sea.json in Resources */,
+				3EA20ECD26D003A8008B2A3C /* IMG_4176.jpg in Resources */,
 				2E37155625C0FB9B0037351E /* LaunchScreen.storyboard in Resources */,
 				2E37155325C0FB9B0037351E /* Assets.xcassets in Resources */,
 				60DE739A26CB6B6E009FF12A /* 21319-particle-wave-with-depth (1).json in Resources */,
 				607369C226C178BC00E14ADF /* wave-loader.json in Resources */,
 				3E01B5C326C9FB1A00D8D79F /* lf30_editor_8etkzbiu.json in Resources */,
+				3EA20EC626CFEFC6008B2A3C /* lf30_editor_pgwz1u0d.json in Resources */,
 				3E01B5C226C9FB1A00D8D79F /* lf30_editor_vkadnukw.json in Resources */,
+				3EA20ECB26D003A5008B2A3C /* IMG_4177.jpg in Resources */,
 				3E01B5CF26CA0EC200D8D79F /* lf30_editor_oosc6awj.json in Resources */,
 				3E01B5D226CA1AFD00D8D79F /* seagull-beach-sound-effect.mp3 in Resources */,
 				3E01B5CB26CA084200D8D79F /* paperboats.json in Resources */,
+				3EA20EC926D003A0008B2A3C /* IMG_4178.jpg in Resources */,
 				2E37154E25C0FB980037351E /* Main.storyboard in Resources */,
+				3EA20EC226CF683D008B2A3C /* MWtzbtpHLT-4.png in Resources */,
 				60DE739E26CCA846009FF12A /* 69971-sea-view.json in Resources */,
 				3E01B5D326CA1AFD00D8D79F /* Ocean-waves-crashing-sound.mp3 in Resources */,
 			);

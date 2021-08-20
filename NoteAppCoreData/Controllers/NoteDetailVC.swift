@@ -10,6 +10,8 @@ import CoreLocation
 //        static let apiKey = "d21eeb7de3c2e905b2ad8af39cb4b53d"
 //    }
 
+// MAKE NOTELIST A GLOBAL VARIABLE TO USE FOR CHARTS !!!
+
 
 class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CLLocationManagerDelegate {
     
@@ -19,6 +21,7 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     //    var lon:Double?
     var globalName:String = ""
     var globalWeather:String = ""
+    
     
     
     //Title text Field
@@ -193,6 +196,9 @@ class NoteDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                     }
                     try context.save()
                     noteList.append(newNote)
+                    print("******************************************************************")
+                    print(noteList)
+                    print("******************************************************************")
                 }
         catch
         {

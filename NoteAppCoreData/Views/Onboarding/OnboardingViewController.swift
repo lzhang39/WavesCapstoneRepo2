@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class OnboardingViewController: UIViewController {
     
@@ -32,14 +33,28 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lottieAnimation()
         
         slides = [
-            OnboardingSlide(title: "Delicious Dishes", description: "Experience a variety of amazing dishes from different cultures around the world.", image: #imageLiteral(resourceName: "petals")),
-            OnboardingSlide(title: "World-Class Chefs", description: "Our dishes are prepared by only the best.", image: #imageLiteral(resourceName: "mug")),
-            OnboardingSlide(title: "Instant World-Wide Delivery", description: "Your orders will be delivered instantly irrespective of your location around the world.", image: #imageLiteral(resourceName: "rosedesign"))
+            OnboardingSlide(title: "Let's talk about loss", description: "We hope the features of this app will be an outlet for emotions, or a self-reflective journal. A daily journaling app might provide foundation in a time where it feels like the ground is caving in beneath your feet...", image: #imageLiteral(resourceName: "IMG_4177")),
+            OnboardingSlide(title: "“Grief changes shape, but it never ends” -Keanu Reeves", description: "This app removes the idea of linear 'progress', and the pressure that grief is supposed go away at the 'end'... the emotions that come with loss come and go, similar to the ebbs and flow of waves crashing on the beach shore.", image: #imageLiteral(resourceName: "IMG_4176")),
+            OnboardingSlide(title: "How to use this app", description: "1) Every day, enter the title (optional), entry (optional), and your 'wavelength' (required; and up to your interpretation :) ) \n 2) Enjoy a meditating wave animation and sounds after each submission", image: #imageLiteral(resourceName: "IMG_4178")),
+            OnboardingSlide(title: "Ted Lasso", description: "'It's funny to think about the things in your life that make you cry just knowing that they existed. Then become the same thing that make you cry knowing that they're now gone...'", image: #imageLiteral(resourceName: "MWtzbtpHLT-4"))
         ]
         
         pageControl.numberOfPages = slides.count
+    }
+    
+    func lottieAnimation() {
+        let animationView = AnimationView(name: "lf30_editor_pgwz1u0d")
+        animationView.contentMode = .scaleAspectFit
+        view.addSubview(animationView)
+        animationView.play()
+        animationView.loopMode = .loop
+        //bigger y, lower the image
+        animationView.frame = CGRect(x: -40, y: 450, width: 575, height: 325)
+//        animationView.center = view.center
+        
     }
     
     

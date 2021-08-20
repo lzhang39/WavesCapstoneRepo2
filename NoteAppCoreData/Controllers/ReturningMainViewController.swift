@@ -27,19 +27,18 @@ class ReturningMainViewController: UIViewController {
         settings.layer.cornerRadius = 25.0
         
         
-        
 
         // Do any additional setup after loading the view.
     }
     func lottieAnimation(){
-        let animationView = AnimationView(name: "21319-particle-wave-with-depth (1)")
+        let animationView = AnimationView(name: "wave-loader")
         animationView.contentMode = .scaleAspectFit
         view.addSubview(animationView)
         animationView.play()
         animationView.loopMode = .loop
         //bigger y, lower the image
-        animationView.frame = CGRect(x: 50, y: 720, width: 300, height: 128)
-//        animationView.center = view.center
+        animationView.frame = CGRect(x: 87, y: 720, width: 240, height: 128)
+    //        animationView.center = view.center
         
     }
 

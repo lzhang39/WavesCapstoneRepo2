@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class WaveExplanationViewController: UIViewController {
     @IBOutlet weak var QuoteButton: UIButton!
@@ -25,8 +26,21 @@ class WaveExplanationViewController: UIViewController {
         super.viewDidLoad()
         QuoteButton.layer.cornerRadius = 25.0
         LinkButton.layer.cornerRadius = 25.0
+        lottieAnimation()
 
         // Do any additional setup after loading the view.
+        
+    }
+    func lottieAnimation(){
+        let animationView = AnimationView(name: "21319-particle-wave-with-depth (1)")
+        animationView.contentMode = .scaleAspectFit
+        view.addSubview(animationView)
+        animationView.play()
+        animationView.loopMode = .loop
+        //bigger y, lower the image
+        animationView.frame = CGRect(x: 50, y: 640, width: 300, height: 128)
+//        animationView.center = view.center
+        
     }
     
 
