@@ -14,7 +14,7 @@ Database - Core Data/SQLite
 Other technologies - Xcode, UserDefaults
 
 ## Features
-1) Onboarding tutorial explaining how to best benefit this app's features
+1) Onboarding tutorial explaining how to best benefit from this app's features
 
 ![simulator_screenshot_1E9E1033-5917-46BD-91E0-88C6697EE3EC](https://user-images.githubusercontent.com/71529653/130328340-6a2ffe54-f575-49a3-9465-1d579f5d2c51.png)
 
